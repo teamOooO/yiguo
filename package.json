@@ -16,6 +16,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+<<<<<<< HEAD
+=======
+    "babel-plugin-component": "^1.1.0",
+    "mint-ui": "^2.2.13",
+>>>>>>> yiguo-zhujieming
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
