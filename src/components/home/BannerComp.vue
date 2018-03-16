@@ -2,13 +2,13 @@
   <div class="banner_wrap">
     <div class="banner">
       <mt-swipe :auto="4000">
-        <mt-swipe-item v-for="img in imgs" :key="img.id">
+        <mt-swipe-item v-for="img in imgs.carouselPictures" :key="img.id">
           <img :src="img.pictureUrl" alt="">
         </mt-swipe-item>
       </mt-swipe>
     </div>
     <div class="bottom-img">
-      <img :src="bottom_img">
+      <img :src="pic">
     </div>
   </div>
 </template>
@@ -18,33 +18,20 @@
     Swipe,
     SwipeItem
   } from 'mint-ui';
-  import axios from 'axios';
   export default {
+    props: ['imgs'],
     components: {
       [Swipe.name]: Swipe,
       [SwipeItem.name]: SwipeItem
     },
-    data: () => {
+    data() {
       return {
-        imgs: [],
-        key: '',
-        bottom_img: ''
+        pic: ''
       }
     },
-    mounted() {
-      axios({
-          url: 'api/homedata',
-          data: {
-            start: 0,
-            count: 10
-          }
-        })
-        .then((result) => {
-          const data = result.data.data.template.componentList[0];
-          this.imgs = data.carouselPictures;
-          this.bottom_img = data.adPictures[0].pictureUrl;
-        })
-    },
+    updated() {
+      this.pic = this.imgs.adPictures[0].pictureUrl
+    }
   }
 </script>
 

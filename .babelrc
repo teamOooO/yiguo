@@ -8,19 +8,12 @@
     }],
     "stage-2"
   ],
-<<<<<<< HEAD
-  "plugins": ["transform-vue-jsx", "transform-runtime", ["component", [{
-    "libraryName": "mint-ui",
-    "style": true
-  }]]],
-=======
   "plugins": ["transform-vue-jsx", "transform-runtime",["component", [
     {
       "libraryName": "mint-ui",
       "style": true
     }
   ]]],
->>>>>>> master
   "env": {
     "test": {
       "presets": ["env", "stage-2"],

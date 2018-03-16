@@ -12,22 +12,12 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js",
-    "mock": "json-server ./src/mock/mock.js -p 9000 -w true -r ./src/mock/routes.json"
+    "build": "node build/build.js"
   },
   "dependencies": {
     "axios": "^0.18.0",
-<<<<<<< HEAD
-    "mint-ui": "^2.2.13",
-    "node-sass": "^4.7.2",
-    "sass-loader": "^6.0.7",
-=======
-<<<<<<< HEAD
-=======
     "babel-plugin-component": "^1.1.0",
     "mint-ui": "^2.2.13",
->>>>>>> yiguo-zhujieming
->>>>>>> master
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },

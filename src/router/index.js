@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 // import HelloWorld from '@/components/HelloWorld'
 
+import Index from '@/components/layout/Index'
 import Home from '@/components/layout/Home'
 import Classify from '@/components/layout/Classify'
 import Community from '@/components/layout/Community'
@@ -17,21 +18,32 @@ import GoodContent from '@/components/classify/GoodContent'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path:'/area',
-      name:'area',
-      component:Area
-    },
-    {
-      path: '/classify',
-      name: 'classify',
-      component: Classify
+      component: Index,
+      redirect: '/home',
+      children: [{
+          path: 'home',
+          name: 'home',
+          component: Home
+        },
+        {
+          path: 'classify/:navindex?',
+          name: 'classify',
+          component: Classify,
+          props: true
+        },
+        {
+          path: 'shoppingcar',
+          name: 'shoppingcar',
+          component: ShoppingCar
+        },
+        {
+          path: 'mine',
+          name: 'mine',
+          component: Mine
+        },
+      ]
     },
     {
       path: '/community',
@@ -39,20 +51,15 @@ export default new Router({
       component: Community
     },
     {
-      path: '/shoppingcar',
-      name: 'shoppingcar',
-      component: ShoppingCar
-    },
-    {
-      path: '/mine',
-      name: 'mine',
-      component: Mine
-    },
-    {
       path: '/product/:class',
       name: 'product',
       component: Product
-    }
-    
+    },
+    {
+      path: 'area',
+      name: 'area',
+      component: Area
+    },
+
   ]
 })

@@ -1,8 +1,8 @@
 <template>
     <div class="first-screen">
         <header-comp></header-comp>
-        <banner-comp></banner-comp>
-        <subnav></subnav>
+        <banner-comp :imgs="res"></banner-comp>
+        <subnav :subnav="res"></subnav>
     </div>
 </template>
 
@@ -11,7 +11,7 @@
     import BannerComp from './BannerComp';
     import Subnav from './Subnav';
     export default {
-        name: 'firstscreen',
+        props: ['res'],
         components: {
             HeaderComp,
             BannerComp,

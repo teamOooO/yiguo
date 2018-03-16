@@ -1,61 +1,35 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <first-screen></first-screen>
-  </div>
-</template>
-
-<script>
-import FirstScreen from '../home/FirstScreen';
-export default {
-  components: {
-    FirstScreen
-  }
-}
-</script>
-
-
-
-
-
-
-
-
-
-=======
-    首页
     <!-- <div class="" v-for='(v, i) in groupFloor'> -->
-      <group-floor :res='groupFloor'/>
+    <first-screen :res="firstScreen"></first-screen>
+    <group-floor :res='groupFloor' />
     <!-- </div> -->
   </div>
 </template>
 <script>
   import axios from 'axios';
+  import FirstScreen from '../home/FirstScreen';
   import GroupFloor from '../home/GroupFloor';
   export default {
     data: () => {
       return {
+        firstScreen: [],
         groupFloor: []
-
       }
     },
     components: {
+      FirstScreen,
       GroupFloor
     },
     mounted() {
       axios({
-        url: '/api/homedata',
-      })
+          url: '/api/homedata',
+        })
         .then((result) => {
           const resultData = result.data.data.template.componentList;
           this.groupFloor.push(resultData[1], resultData[2], resultData[3], resultData[4]);
-
-          // this.img = resultData[1].adPictures[0].pictureUrl;
-          // console.log(this.groupFloor);
-          // console.log(this.groupFloor[1].adPictures[0].pictureUrl);
-
+          this.firstScreen = resultData[0];
         })
     }
   }
 </script>
->>>>>>> master

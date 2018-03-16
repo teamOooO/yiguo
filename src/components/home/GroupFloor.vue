@@ -53,7 +53,7 @@ export default {
   // },
   props: ['res'],
   mounted() {
-    console.log(this.res);
+    // console.log(this.res);
   }
   // mounted() {
   //   axios({
