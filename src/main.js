@@ -4,7 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+
 import './styles/app.scss'
+// import Search from '@/components/classify/Search'
+
+Vue.use(MintUI)
 
 Vue.config.productionTip = false
 
@@ -12,8 +18,8 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  template: '<App/>',
   components: {
-    App
-  },
-  template: '<App/>'
+    App,
+  }
 })

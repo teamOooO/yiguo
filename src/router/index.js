@@ -10,6 +10,10 @@ import Mine from '@/components/layout/Mine'
 import Area from '@/components/home/Area'
 import Product from '@/components/list/Product'
 
+import Search from '@/components/classify/Search'
+import SideNav from '@/components/classify/SideNav'
+import GoodContent from '@/components/classify/GoodContent'
+
 Vue.use(Router)
 
 export default new Router({
@@ -49,5 +53,6 @@ export default new Router({
       name: 'product',
       component: Product
     }
+    
   ]
 })

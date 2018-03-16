@@ -240,8 +240,13 @@
               "cornerPictureUrl": "",
               "commoditySpec": "/1kg",
               "promotionId": "00000000-0000-0000-0000-000000000000",
+<<<<<<< HEAD
               "saleSlogan": null,
               "commodityPrice": 55.9,
+=======
+              "saleSlogan": "直降",
+              "commodityPrice": 40.9,
+>>>>>>> master
               "orderNo": 3,
               "state": 0,
               "leftImgUrl": null,
@@ -258,8 +263,13 @@
               "cornerPictureUrl": "",
               "commoditySpec": "/12个",
               "promotionId": "00000000-0000-0000-0000-000000000000",
+<<<<<<< HEAD
               "saleSlogan": null,
               "commodityPrice": 51.9,
+=======
+              "saleSlogan": "直降",
+              "commodityPrice": 41.9,
+>>>>>>> master
               "orderNo": 6,
               "state": 0,
               "leftImgUrl": null,
@@ -521,10 +531,17 @@
           "componentNavs": null,
           "componentCommoditys": [
             {
+<<<<<<< HEAD
               "id": "a117ee1c-f28e-49f8-b95d-1e7257774d21",
               "commodityId": "0dd7b0c2-9384-49f0-b379-7322bca424bf",
               "commodityCode": "1356627",
               "commodityName": "波得泰国冷冻金枕榴莲",
+=======
+              "id": "ee93f9bd-1faa-4d0c-9dd7-111379a1009e",
+              "commodityId": "0dd7b0c2-9384-49f0-b379-7322bca424bf",
+              "commodityCode": "1356627",
+              "commodityName": "波得泰国冷冻金枕榴莲400g",
+>>>>>>> master
               "subTitle": "解冻就能吃，软糯绵甜",
               "pictureUrl": "//img13.yiguoimg.com/d/items/2018/180222/9288719527486550_300.jpg",
               "cornerPictureUrl": "",
@@ -539,6 +556,7 @@
               "commodityTagList": []
             },
             {
+<<<<<<< HEAD
               "id": "964363cf-bd7c-43bb-9df7-869b6d44cb2c",
               "commodityId": "049d87e4-f255-4975-8e01-971c607906ab",
               "commodityCode": "1335063",
@@ -550,6 +568,19 @@
               "promotionId": "00000000-0000-0000-0000-000000000000",
               "saleSlogan": "单品直降",
               "commodityPrice": 128.0,
+=======
+              "id": "11687a2d-a32f-409c-b401-582842c92e39",
+              "commodityId": "495f6f53-c0c7-4251-8fe7-453dfa2b7562",
+              "commodityCode": "1363609",
+              "commodityName": "桃花点点鲜汁肉包300g(50g*6)",
+              "subTitle": "手工精制，鲜香四溢",
+              "pictureUrl": "//img09.yiguoimg.com/d/items/2018/180302/9288719791662178_300.jpg",
+              "cornerPictureUrl": "",
+              "commoditySpec": "/300g",
+              "promotionId": "00000000-0000-0000-0000-000000000000",
+              "saleSlogan": "2件8折",
+              "commodityPrice": 15.8,
+>>>>>>> master
               "orderNo": 2,
               "state": 0,
               "leftImgUrl": null,
@@ -557,6 +588,7 @@
               "commodityTagList": []
             },
             {
+<<<<<<< HEAD
               "id": "5cb87b69-da80-49ba-93fa-b186b287bb60",
               "commodityId": "9204c49c-a0cf-4613-88fe-173bf3e8bfc6",
               "commodityCode": "1348938",
@@ -568,6 +600,19 @@
               "promotionId": "00000000-0000-0000-0000-000000000000",
               "saleSlogan": "第二份半价",
               "commodityPrice": 59.8,
+=======
+              "id": "964363cf-bd7c-43bb-9df7-869b6d44cb2c",
+              "commodityId": "049d87e4-f255-4975-8e01-971c607906ab",
+              "commodityCode": "1335063",
+              "commodityName": "北海道原味蛋糕",
+              "subTitle": "丝滑在口中点点化开",
+              "pictureUrl": "//img13.yiguoimg.com/d/items/2018/180119/9288718219191347_300.jpg",
+              "cornerPictureUrl": "",
+              "commoditySpec": "/250g",
+              "promotionId": "00000000-0000-0000-0000-000000000000",
+              "saleSlogan": "单品直降",
+              "commodityPrice": 128.0,
+>>>>>>> master
               "orderNo": 3,
               "state": 0,
               "leftImgUrl": null,
@@ -575,6 +620,7 @@
               "commodityTagList": []
             },
             {
+<<<<<<< HEAD
               "id": "bfd850a4-2c14-4f3a-890d-e1bcba8d8d4b",
               "commodityId": "495f6f53-c0c7-4251-8fe7-453dfa2b7562",
               "commodityCode": "1363609",
@@ -593,6 +639,8 @@
               "commodityTagList": []
             },
             {
+=======
+>>>>>>> master
               "id": "ddf5c1d5-1fe1-4770-af45-d942b7fc16d7",
               "commodityId": "9fae1922-4eba-42d7-87bd-d7238fe851b3",
               "commodityCode": "1247045",
@@ -604,7 +652,11 @@
               "promotionId": "00000000-0000-0000-0000-000000000000",
               "saleSlogan": null,
               "commodityPrice": 139.0,
+<<<<<<< HEAD
               "orderNo": 5,
+=======
+              "orderNo": 4,
+>>>>>>> master
               "state": 0,
               "leftImgUrl": null,
               "rightImgUrl": null,
@@ -622,7 +674,11 @@
               "promotionId": "00000000-0000-0000-0000-000000000000",
               "saleSlogan": "单品直降",
               "commodityPrice": 55.0,
+<<<<<<< HEAD
               "orderNo": 6,
+=======
+              "orderNo": 5,
+>>>>>>> master
               "state": 0,
               "leftImgUrl": null,
               "rightImgUrl": null,
@@ -640,6 +696,27 @@
               "promotionId": "00000000-0000-0000-0000-000000000000",
               "saleSlogan": null,
               "commodityPrice": 178.0,
+<<<<<<< HEAD
+=======
+              "orderNo": 6,
+              "state": 0,
+              "leftImgUrl": null,
+              "rightImgUrl": null,
+              "commodityTagList": []
+            },
+            {
+              "id": "9636b726-fd7d-4c60-a942-e3c6e0cac94b",
+              "commodityId": "a5a1e472-5e1f-4456-9f46-355223fef9fb",
+              "commodityCode": "1318384",
+              "commodityName": "心中甜每日坚果",
+              "subTitle": "酸甜酥脆好口感",
+              "pictureUrl": "//img13.yiguoimg.com/d/items/2017/171009/9288713737184073_300.jpg",
+              "cornerPictureUrl": "//img02.yiguo.com/e/web/130101/app/proms/2.png",
+              "commoditySpec": "/750g(25g*30)",
+              "promotionId": "00000000-0000-0000-0000-000000000000",
+              "saleSlogan": null,
+              "commodityPrice": 138.0,
+>>>>>>> master
               "orderNo": 7,
               "state": 0,
               "leftImgUrl": null,
