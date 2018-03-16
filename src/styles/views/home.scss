@@ -1,131 +1,52 @@
-.container {
-  .main {
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: .4rem;
+    background: linear-gradient(to right, #36db84, #0eb27b);
+    padding: .05rem .1rem .05rem 0.12rem;
+    z-index: 100;
     @include flexbox();
-    @include flex-direction(column);
-    nav {
-      height: .44rem;
-      .custom-info {
-        height: 100%;
-        @include flexbox();
-        @include align-items();
-        padding: 0 15px;
-        span {
-          @include flex();
+    @include align-content(space-between);
+    @include justify-content(center);
+    .area-btn {
+        width: .5rem;
+        span,
+        i {
+            line-height: .3rem;
+            color: #fff;
+            font-size: 14px;
         }
-        a {
-          width: .84rem;
-          position: absolute;
-          right: .15rem;
-          top: 0;
-          display: block;
-          background-color: #f5f5f5;
-          padding: 0 .2rem;
-          height: .3rem;
-          line-height: .3rem;
-          margin-top: .06rem;
-          color: $base-color;
-          @include border-radius(.15rem);
-        }
-      }
-      @include border(0 0 1px 0);
-    }
-    main {
-      @include flex();
-      width: 100%;
-      overflow: hidden;
-      ul {
-        width: 100%;
-
-        .head {
-            text-align: center;
-            height: 100px;
-            line-height: 100px;
-        }
-        .head img {
+        .area-btn-i {
+            background: url('../assets/images/arrow.png') no-repeat;
+            width: .08rem;
+            height: .04rem;
+            position: relative;
+            top: -.03rem;
+            right: -.03rem;
+            background-size: 100% 100%;
             display: inline-block;
-            transform: rotate(180deg);
-            -webkit-transform: rotate(180deg);
-            transition: transform 150ms;
-            -webkit-transition: transform 150ms;
         }
-        .up {
-            transform: rotate(360deg) !important;
-            -webkit-transform: rotate(360deg) !important;
-        }
-        .foot {
-            text-align: center;
-            height: 100px;
-            line-height: 100px;
-        }
-        .foot img {
-            display: inline-block;
-            /*transform: rotate(0deg);*/
-            /*-webkit-transform: rotate(0deg);*/
-            transition: transform 150ms;
-            -webkit-transition: transform 150ms;
-        }
-        .down {
-            transform: rotate(180deg) !important;
-            -webkit-transform: rotate(180deg) !important;
-        }
-
-        li {
-          padding: .14rem;
-          height: 1rem;
-          @include flexbox();
-          @include align-items();
-          @include border(0 0 1px 0);
-
-          &:first-child,
-          &:last-child {
-            @include flexbox();
-            @include justify-content(center);
-            height: .4rem;
-            img {
-              width: .15rem;
-              height: .15rem;
-            }
-          }
-
-          > img {
-            width: .6rem;
-          }
-          > div {
-            padding-left: .06rem;
-            @include flex();
-            h2 {
-              font-size: .18rem;
-              margin-bottom: .04rem;
-            }
-            p {
-              font-size: .14rem;
-              height: .24rem;
-              &:nth-child(2) {
-                @include flexbox();
-                span {
-                  display: block;
-                  height: 100%;
-                  @include ellipsis();
-                  &:first-child {
-                    @include flex();
-                  }
-                  &:last-child {
-                    width: .7rem;
-                    color: $base-color;
-                    font-size: .16rem;
-                    text-align: right;
-                    margin-bottom: .2rem;
-                  }
-                }
-              }
-              &:last-child {
-                color: #888
-              }
-            }
-          }
-        }
-      }
     }
-  }
+    .classfy-ipt {
+        @include flex(1);
+        position: relative;
+        padding: 0 .4rem 0 1.06rem;
+        border-radius: .45rem;
+        background: rgba(255, 255, 255, .2);
+        span,
+        i {
+            line-height: .3rem;
+        }
+        .search-icon {
+            position: absolute;
+            left: 0.05rem;
+            top: .03rem;
+            width: .25rem;
+            height: .25rem;
+            background: url('../assets/images/search.png') no-repeat;
+            background-size: 100% 100%;
+        }
+    }
 }

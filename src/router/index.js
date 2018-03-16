@@ -7,8 +7,8 @@ import Classify from '@/components/layout/Classify'
 import Community from '@/components/layout/Community'
 import ShoppingCar from '@/components/layout/ShoppingCar'
 import Mine from '@/components/layout/Mine'
-
-
+import Area from '@/components/home/Area'
+import Product from '@/components/list/Product'
 
 Vue.use(Router)
 
@@ -18,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path:'/area',
+      name:'area',
+      component:Area
     },
     {
       path: '/classify',
@@ -38,6 +43,11 @@ export default new Router({
       path: '/mine',
       name: 'mine',
       component: Mine
+    },
+    {
+      path: '/product/:class',
+      name: 'product',
+      component: Product
     }
   ]
 })
