@@ -12,12 +12,23 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
+<<<<<<< HEAD
         target: 'http://localhost:9001',
       },
       '/api1':{
         target: 'http://localhost:9001',
       }
       
+=======
+        target: 'http://localhost:9000'
+      }
+      // '/api1': {
+      //   target: 'http://weixin.m.yiguo.com',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
+>>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f
     },
 
 

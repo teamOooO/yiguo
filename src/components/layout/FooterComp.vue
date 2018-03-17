@@ -2,7 +2,11 @@
     <div class="footer">
         <div class="footer-in">
             <router-link active-class="active" :to="{name:'home'}" exact><i class="icon icon1"></i>首页</router-link>
+<<<<<<< HEAD
             <router-link active-class="active" to="/classify"><i class="icon icon2"></i>分类</router-link>
+=======
+            <router-link active-class="active" :to="{name:'classify',params:{navindex:0}}"><i class="icon icon2"></i>分类</router-link>
+>>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f
             <router-link active-class="active" :to="{name:'community'}"><i class="icon icon3"></i>吃饭吧</router-link>
             <router-link active-class="active" :to="{name:'shoppingcar'}"><i class="icon icon4"></i>购物车</router-link>
             <router-link active-class="active" :to="{name:'mine'}"><i class="icon icon5"></i>我的易果</router-link>
@@ -36,10 +40,18 @@
             }
             a.active {
                 color: $font-color;
-                i.icon1{background-image: url("../../assets/images/nav_home_selected_active.png");}
-                i.icon2{background-image: url("../../assets/images/nav_classify_active.png");}
-                i.icon4{background-image: url("../../assets/images/nav_list_active.png");}
-                i.icon5{background-image: url("../../assets/images/nav_user_active.png");}
+                i.icon1 {
+                    background-image: url("../../assets/images/nav_home_selected_active.png");
+                }
+                i.icon2 {
+                    background-image: url("../../assets/images/nav_classify_active.png");
+                }
+                i.icon4 {
+                    background-image: url("../../assets/images/nav_list_active.png");
+                }
+                i.icon5 {
+                    background-image: url("../../assets/images/nav_user_active.png");
+                }
             }
             .icon {
                 display: inline-block;
