@@ -1,6 +1,7 @@
 <template>
     <div class="total-info">
-        <div>全场满100元包邮，{{tip}}<span class="red"></span></div>
+        <div v-if="$store.getters.saleTopTipDif <= 0">全场满100元包邮，已包邮</div>
+        <div v-else>全场满100元包邮，还差<span class="red">{{$store.getters.saleTopTipDif}}</span>元包邮</div>
     </div>
 </template>
 
@@ -14,7 +15,7 @@
     }
 </script>
 
-<style lang="scss" >
+<style lang="scss">
     @import '../../styles/yo/usage/core/reset.scss';
     .total-info {
         position: fixed;
@@ -29,6 +30,7 @@
         z-index: 100;
         @include border(0, 0, 1px, 0);
         border-color: #ffd6a0;
+        margin-bottom: .08rem;
     }
 </style>
 

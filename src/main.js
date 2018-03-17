@@ -23,6 +23,7 @@ const vm = new Vue({
   router,
   store,
   template: '<App/>',
+  store,
   components: {
     App,
   }

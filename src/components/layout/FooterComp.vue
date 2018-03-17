@@ -18,9 +18,6 @@
     $font-color:#11b57c;
     .footer {
         z-index: 99;
-        position: fixed;
-        bottom: 0;
-        left: 0;
         height: .51rem;
         width: 100%;
         background: #FFF;
