@@ -5,7 +5,7 @@
   "author": "boyuZ <735841030@qq.com>",
   "private": true,
   "scripts": {
-    "mock": "json-server ./src/mock/mock.js -p 9000 -w true -r ./src/mock/routes.json",
+    "mock": "json-server ./src/mock/mock.js -p 9001 -w true -r ./src/mock/routes.json",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
@@ -16,13 +16,11 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-<<<<<<< HEAD
-=======
     "babel-plugin-component": "^1.1.0",
     "mint-ui": "^2.2.13",
->>>>>>> yiguo-zhujieming
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

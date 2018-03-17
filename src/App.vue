@@ -1,42 +1,23 @@
 <template>
   <div id="app">
-<<<<<<< HEAD
     <router-view/>
-    <footer-comp></footer-comp>
-=======
-   
->>>>>>> yiguo-zhujieming
+    <footer-comp v-show="$store.state.footerShow"></footer-comp>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-import FooterComp from '@/components/layout/FooterComp.vue'
+import FooterComp from "@/components/layout/FooterComp.vue";
 export default {
   name: "App",
   components: {
     FooterComp
   }
 };
-=======
-
->>>>>>> yiguo-zhujieming
 </script>
 
 <style lang="scss">
-
+  #app{
+    width: 100%;
+    height: 100%;
+  }
 </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,7 +2,7 @@
     <div class="footer">
         <div class="footer-in">
             <router-link active-class="active" :to="{name:'home'}" exact><i class="icon icon1"></i>首页</router-link>
-            <router-link active-class="active" :to="{name:'classify'}"><i class="icon icon2"></i>分类</router-link>
+            <router-link active-class="active" to="/classify"><i class="icon icon2"></i>分类</router-link>
             <router-link active-class="active" :to="{name:'community'}"><i class="icon icon3"></i>吃饭吧</router-link>
             <router-link active-class="active" :to="{name:'shoppingcar'}"><i class="icon icon4"></i>购物车</router-link>
             <router-link active-class="active" :to="{name:'mine'}"><i class="icon icon5"></i>我的易果</router-link>

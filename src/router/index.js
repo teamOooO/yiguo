@@ -25,8 +25,13 @@ export default new Router({
     },
     {
       path: '/classify',
+      redirect:'/classify/0'
+    },
+    {
+      path: '/classify/:page',
       name: 'classify',
-      component: Classify
+      component: Classify,
+      props:true
     },
     {
       path: '/community',
