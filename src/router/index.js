@@ -20,20 +20,6 @@ Vue.use(Router)
 export default new Router({
   routes: [{
       path: '/',
-<<<<<<< HEAD
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/classify',
-      redirect:'/classify/0'
-    },
-    {
-      path: '/classify/:page',
-      name: 'classify',
-      component: Classify,
-      props:true
-=======
       component: Index,
       redirect: '/home',
       children: [{
@@ -42,7 +28,11 @@ export default new Router({
           component: Home
         },
         {
-          path: 'classify/:navindex?',
+          path: '/classify',
+          redirect:'/classify/0'
+        },
+        {
+          path: 'classify/:page',
           name: 'classify',
           component: Classify,
           props: true
@@ -58,7 +48,6 @@ export default new Router({
           component: Mine
         },
       ]
->>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f
     },
     {
       path: '/community',

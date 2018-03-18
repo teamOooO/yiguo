@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="nofooter">
         <router-view/>
         <footer-comp></footer-comp>
     </div>
@@ -16,5 +16,10 @@
 </script>
 
 <style lang="scss">
-
+    @import "../../styles/yo/usage/core/reset";
+    .nofooter{
+        @include flexbox();
+        @include flex-direction(column);
+        height: 100%;
+    }
 </style>
