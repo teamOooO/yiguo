@@ -1,0 +1,34 @@
+{
+  "Method": "",
+  "RspCode": 1,
+  "RspMsg": "刷新购物车成功",
+  "RspData": {
+      //正常添加，能进行结算的商品Commoditys
+    "CommodityGroups": [{
+      "CommodityId": "aa8bd4c5-968c-428b-9005-6c17d51f7845",
+      "CommodityName": "广西高乐蜜甜芒果6个200g以上/个",
+      "CommodityAmount": 1,
+      "CommodityPrice": 35.8000,
+      "OriginalPrice": 45.8000,
+      "SmallPic": "http://img12.yiguoimg.com/d/items/2017/171115/9288715143324527_300.jpg",
+      "PromotionTag": "直降",
+      "Selected": true,
+      "CommodityPromotionGroups": 0//当前商品是否能参加满减活动0 不能 1 能
+    }],
+    "PromotionGroups": [],//可以参加满减的所有商品
+    "HasActivityGroup": true,
+    "FailureGroups": [],//添加失败的所有商品
+    "GuessYouLikeCommoditys": [{//猜你喜欢的部分
+      "CommodityId": "3588621c-7af3-4863-9ec6-85ad76afdc53",
+      "CommodityCode": "1311437",
+      "SmallPic": "http://img10.yiguoimg.com/d/items/2017/170925/9288713309266745_300.jpg",
+      "CommodityName": "太阳谷加拿大AAA级谷饲眼肉牛排220g",
+      "CommodityPrice": 89.9000
+    }],
+    // "TotalInfo": {
+    //   "sumAmount": "336.20",
+    //   "discountAmount": "19.00",
+    //   "selectCommodityTotalCount": "9"
+    // }
+  }
+}

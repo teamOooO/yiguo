@@ -2,8 +2,8 @@
     <div class="cart-total">
         <div class="check"><i class="active"></i>全选</div>
         <div class="text">
-            <p>合计(不含运费)：<b>¥214.90</b></p>
-            <span>已优惠: ¥0.00</span>
+            <p>合计(不含运费)：<b>¥{{$store.getters.Amount.sumAmount}}</b></p>
+            <span>已优惠: ¥{{$store.getters.Amount.cheapAmount}}</span>
         </div>
         <div class="btn">
             <a href="javascript:;">去结算</a>
@@ -11,17 +11,25 @@
     </div>
 </template>
 
+<script>
+    export default {
+        data() {
+            return {
+               
+            }
+        }
+    }
+</script>
+
+
 <style lang="scss">
     @import '../../styles/yo/usage/core/reset.scss';
     .cart-total {
-        position: fixed;
-        left: 0;
-        bottom: .5rem;
         width: 100%;
         height: .45rem;
         background: #fff;
         @include flexbox();
-        border-bottom: 1px solid #888;
+        border-bottom: 1px solid #999;
         .check {
             top: 0;
             left: 0;
