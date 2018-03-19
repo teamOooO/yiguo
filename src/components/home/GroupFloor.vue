@@ -1,18 +1,18 @@
 <template lang="html">
-
-   <!--  -->
   <div class="group-floor pb">
-
-
     <div class="" v-for="(v, i) in res">
-      <a href="javascript:;" class="floor-img">
+      <a href="javascript:;" class="floor-img" :data-tid="v.adPictures[0].id">
         <img :src="v.adPictures[0].pictureUrl" alt="">
       </a>
       <div class="product-list clear">
         <div class="product-list-in">
 
-          <div class="proitem" v-for="(v, i) in res[i].componentCommoditys">
-            <div class="pic">
+          <!-- <div class="proitem" v-for="(v, i) in res[i].componentCommoditys"> -->
+          <div class="proitem" v-for="(v, i) in v.componentCommoditys" >
+            <div class="pic" :data-cid="v.commodityId">
+              <div class="tag">
+                <img :src="v.cornerPictureUrl" alt="">
+              </div>
               <a href="javascript:;">
                 <img :src="v.pictureUrl" alt="">
               </a>
@@ -30,7 +30,6 @@
                 <div class="price">
                   <strong>￥{{v.commodityPrice}}</strong>
                   {{v.commoditySpec}}
-                  <!-- {{v.componentCommoditys[0].commoditySpec}} -->
                 </div>
               </p>
             </div>
@@ -43,9 +42,8 @@
 </template>
 
 <script>
-// import axios from 'axios';
-
 export default {
+<<<<<<< HEAD
   // data: () => {
   //   return {
   //     img: []
@@ -67,6 +65,9 @@ export default {
   //
   //     })
   // }
+=======
+  props: ['res']
+>>>>>>> sj-201803015-homepage
 }
 </script>
 
@@ -100,6 +101,11 @@ body{
     overflow-y: hidden;
     padding: .09rem 0 .17rem .09rem;
     box-sizing: border-box;
+  }
+  .proitem .name, .proitem .sub, .proitem .price {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .proitem{
     display: inline-block;
@@ -149,6 +155,16 @@ body{
   }
   .pic{
     position: relative;
+    .tag {
+      position: absolute;
+      top: .04rem;
+      left: .04rem;
+      width: .25rem;
+      height: auto;
+      img{
+        width: 100%;
+      }
+    }
     a img{
       width: .9rem;
       height: .9rem;

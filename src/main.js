@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+<<<<<<< HEAD
 import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
@@ -11,6 +12,8 @@ import './styles/app.scss'
 // import Search from '@/components/classify/Search'
 
 Vue.use(MintUI)
+=======
+>>>>>>> sj-201803015-homepage
 
 Vue.config.productionTip = false
 
