@@ -1,7 +1,13 @@
 <template>
+<<<<<<< HEAD
+  <div class="classify">
+    <search></search>
+    <side-nav  :page='page'></side-nav>
+=======
   <div>
     <search></search>
     <side-nav :navindex="navindex"></side-nav>
+>>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f
   </div>
 </template>
 
@@ -9,6 +15,24 @@
   import Search from '../classify/Search';
   import SideNav from '../classify/SideNav';
   export default {
+<<<<<<< HEAD
+    props:['page'],
+    components: {
+      Search,
+      SideNav,
+    }
+  }
+</script>
+<style lang="scss">
+  @import "../../styles/yo/usage/core/reset";
+  .classify{
+    width: 100%;
+    height: 100%;
+    @include flexbox();
+    @include flex-direction(column)
+  }
+</style>
+=======
     props: ['navindex'],
     components: {
       Search,
@@ -24,3 +48,4 @@
         },
   }
 </script>
+>>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f

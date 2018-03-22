@@ -1,3 +1,4 @@
 {
-  "/api/homedata": "/homedata"
+  "/api/homedata": "/homedata",
+  "/api1/commodity/classify": "/classify"
 }
