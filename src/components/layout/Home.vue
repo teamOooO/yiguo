@@ -1,15 +1,14 @@
 <template>
   <div>
-<<<<<<< HEAD
+
     <!-- <div class="" v-for='(v, i) in groupFloor'> -->
     <first-screen :res="firstScreen"></first-screen>
-    <group-floor :res='groupFloor' />
-    <!-- </div> -->
-=======
+
+
     <group-floor :res="groupFloor"/>
     <hot-selling :hotSellingTit="hotSellingTit" :hotSelling="hotSelling"/>
     <home-prolist :res="homeProlist" />
->>>>>>> 468ecea89d899c3aebe1e832214be486f1e5f251
+
   </div>
 </template>
 <script>
