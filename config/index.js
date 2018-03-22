@@ -12,7 +12,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://localhost:9000'
+        target: 'http://localhost:9000',
       }
       // '/api1': {
       //   target: 'http://weixin.m.yiguo.com',
@@ -21,6 +21,7 @@ module.exports = {
       //     '^/api': ''
       //   }
     },
+
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
