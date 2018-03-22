@@ -64,13 +64,12 @@ import GoodContent from '@/components/classify/GoodContent'
     .classifyContent {
         @include flexbox();
         background: #fff;
-        // height: 100%;
+        height: 100%;
         .goodsNav {
             width: .72rem;
             height: 100%;
             text-align: center;
             background: #f4f4f4;
-            padding-bottom: .5rem;
             ul{
                 width: 100%;
                 height: 100%;

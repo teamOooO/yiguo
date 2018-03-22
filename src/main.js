@@ -10,6 +10,11 @@ import 'mint-ui/lib/style.css'
 
 import './styles/app.scss'
 
+import axios from 'axios'
+import WebStorageCache from'web-storage-cache'
+
+const wsCache = new WebStorageCache();
+
 Vue.use(MintUI)
 
 Vue.config.productionTip = false
@@ -23,5 +28,18 @@ const vm = new Vue({
   store,
   components: {
     App,
+  },
+  beforeCreate () {
+    axios({
+      url: '/api/users/issignin',
+      headers:{
+        'X-Access-Token': wsCache.get('token')
+      }
+    })
+    .then((result) => {
+      // console.log(result)
+      this.$store.dispatch('getIssignin',result.data.data.issignin)
+      this.$store.dispatch('getUserName',result.data.data.username)
+    })
   }
 })

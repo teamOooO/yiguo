@@ -11,15 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
+      '/api': { // 本地接口
         target: 'http://localhost:9001'
       }
-      // '/api1': {
-      //   target: 'http://weixin.m.yiguo.com',
-      //   changeOrigin: true,
-      //   pathRewrite: {
-      //     '^/api': ''
-      //   }
+      // '/api': {  // 真实接口
+      //   target: 'http://10.9.163.33:3000'
+      // }
+
     },
 
 

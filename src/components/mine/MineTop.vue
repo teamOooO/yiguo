@@ -2,29 +2,36 @@
     <div>
         <div class="mine">
             <div class="header">
-                <a href="">
+                <router-link :to="{name:'signin'}">
                     <img src="../../assets/images/no-pic.jpg" alt="">
-                    <i>登录/注册</i>
-                </a>
-                <a class="setting" href=""></a>
+                    <i v-if="!$store.state.issignin">登录/注册</i>
+                    <i v-else>{{$store.state.userName}}</i>
+                </router-link>
+                <p v-show="$store.state.issignin" class="signIn"><a>
+                    <i class="gift"></i>签到送好礼<i class="goBack"></i></a>
+                </p>
+                <router-link class="setting" to="/signout"></router-link>
             </div>
         </div>
         <div class="account">
             <p>
                 <a href="">
-                    <span class="num">-</span>
+                    <span v-if="!$store.state.issignin" class="num">-</span>
+                    <span v-if="$store.state.issignin" class="num">0.00</span>
                     <span class="txt" >账户余额</span>
                 </a>
             </p>
             <p>
                 <a href="">
-                    <span class="num">-</span>
+                    <span v-if="!$store.state.issignin" class="num">-</span>
+                    <span v-if="$store.state.issignin" class="num">2</span>
                     <span class="txt" >优惠券</span>
                 </a>
             </p>
             <p>
                 <a href="">
-                    <span class="num">-</span>
+                    <span v-if="!$store.state.issignin" class="num">-</span>
+                    <span v-if="$store.state.issignin" class="num">120</span>
                     <span class="txt" >悠币</span>
                 </a>
             </p>
@@ -83,6 +90,46 @@ export default {
                 height: .18rem;
                 background: url(../../assets/images/setting.png) no-repeat 100% 100%;
                 background-size: 100% 100%;
+            }
+            .signIn{
+                position: absolute;
+                right: 0;
+                bottom: .45rem;
+                height: .24rem;
+                background: #c5f9e5;
+                @include border-radius(3px 0 0 3px);
+                color: #12b67c;
+                font-size: .12rem;
+                a{
+                    position: relative;
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    line-height: 100%;
+                    color: #12b67c;
+                    padding: .07rem 0.11rem .07rem .2rem;
+                    .gift{
+                        position: absolute;
+                        left: 0.04rem;
+                        top: 50%;
+                        margin-top: -.12rem;
+                        display: inline-block;
+                        width: .12rem;
+                        height: .25rem;
+                        background: url(../../assets/images/gift.png) center no-repeat;
+                        background-size: .12rem .15rem;
+                    }
+                    .goBack{
+                        position: absolute;
+                        top: 0;
+                        right: .01rem;
+                        display: inline-block;
+                        width: .03rem;
+                        height: .25rem;
+                        background: url(../../assets/images/goPage3.png) center no-repeat;
+                        background-size: .03rem .06rem;
+                    }
+                }
             }
         }
     }

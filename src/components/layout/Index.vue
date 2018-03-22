@@ -1,12 +1,7 @@
 <template>
-<<<<<<< HEAD
-    <div class="nofooter">
-        <router-view/>
-=======
     <div class="index">
         <router-view class="indexcon"/>
->>>>>>> master
-        <footer-comp></footer-comp>
+        <footer-comp v-show="$store.state.footerShow"></footer-comp>
     </div>
 </template>
 
@@ -21,13 +16,6 @@
 </script>
 
 <style lang="scss">
-<<<<<<< HEAD
-    @import "../../styles/yo/usage/core/reset";
-    .nofooter{
-        @include flexbox();
-        @include flex-direction(column);
-        height: 100%;
-=======
     @import '../../styles/yo/usage/core/reset.scss';
     .index {
         height: 100%;
@@ -40,6 +28,5 @@
         @include flex(1);
         width: 100%;
         overflow-y: scroll;
->>>>>>> master
     }
 </style>

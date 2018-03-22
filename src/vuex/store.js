@@ -1,27 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-<<<<<<< HEAD
-Vue.use(Vuex)
-
-const store = new Vuex.Store({
-    state: {
-        footerShow: true
-    },
-    mutations: {
-        changeFooterShow(state, payload) {
-            state.footerShow = payload
-        }
-    }
-
-})
-
-export default store
-=======
 Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
+    footerShow: true,
+    userName: '',
+    issignin: false,
     Commoditys: [{
       "CommodityId": "aa8bd4c5-968c-428b-9005-6c17d51f7845",
       "CommodityName": "广西高乐蜜甜芒果6个200g以上/个",
@@ -78,9 +64,15 @@ const store = new Vuex.Store({
 
   },
   mutations: {
-    // addNewToCart(state) {
-    //   state.count++
-    // }
+    changeFooterShow(state, payload) {
+        state.footerShow = payload
+    },
+    setUserName(state, payload){
+      state.userName = payload
+    },
+    setIssignin(state, payload){
+      state.issignin = payload
+    }
   },
   getters: {
     Amount(state) {
@@ -108,8 +100,15 @@ const store = new Vuex.Store({
     saleTopTipDif(state, getters) {
       return (100 - getters.Amount.sumAmount).toFixed(2);
     }
+  },
+  actions: {
+    getUserName(context,data){
+      context.commit('setUserName',data)
+    },
+    getIssignin(context,data){
+      context.commit('setIssignin',data)
+    }
   }
 })
 
 export default store;
->>>>>>> zhangboyu-0315-router-end

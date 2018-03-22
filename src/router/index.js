@@ -15,6 +15,10 @@ import Search from '@/components/classify/Search'
 import SideNav from '@/components/classify/SideNav'
 import GoodContent from '@/components/classify/GoodContent'
 
+import Signin from '@/components/signin/signin'
+import Signup from '@/components/signin/signup'
+import Signout from '@/components/signin/signout'
+
 Vue.use(Router)
 
 export default new Router({
@@ -64,6 +68,21 @@ export default new Router({
       name: 'area',
       component: Area
     },
+    {
+      path: '/signin',
+      name: 'signin',
+      component: Signin
+    },
+    {
+      path: '/signup',
+      name: 'signup',
+      component: Signup
+    },
+    {
+      path: '/signout',
+      name: 'signout',
+      component: Signout
+    }
 
   ]
 })
