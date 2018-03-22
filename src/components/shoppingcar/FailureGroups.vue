@@ -1,8 +1,8 @@
 <template>
-    <div class="failure-groups">
+    <div v-show="$store.state.FailureGroups.length > 0" class="failure-groups">
         <div class="title">失败商品</div>
-        <failure-item :detail="detail"></failure-item>
-        <div class="clear-btn">
+        <failure-item v-for="v in $store.state.FailureGroups" :key="v.CommodityId" :detail="v"></failure-item>
+        <div class="clear-btn" @click="clearAll">
             <a href="javascript:;">清除失效商品</a>
         </div>
     </div>
@@ -10,9 +10,15 @@
 <script>
     import FailureItem from './FailureItem'
     export default {
-        props: ['detail'],
+        props: ['detail', 'index'],
         components: {
             FailureItem
+        },
+        methods: {
+            clearAll() {
+                this.$store.commit('clearAll');
+                this.$store.commit('cartIsEmpty');
+            }
         }
     }
 </script>
@@ -21,6 +27,7 @@
 <style lang="scss">
     @import '../../styles/yo/usage/core/reset.scss';
     .failure-groups {
+        margin:.08rem 0;
         .clear-btn {
             background: #fff;
             position: relative;
@@ -47,7 +54,7 @@
             line-height: .35rem;
             padding-left: .14rem;
             background: #fff;
-           border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #eee;
         }
     }
 </style>

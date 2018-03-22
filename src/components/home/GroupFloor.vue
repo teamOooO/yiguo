@@ -23,7 +23,7 @@
                   {{v.commodityName}}
                 </a>
                 <div class="saletip">
-                  <span>
+                  <span v-if="v.saleSlogan" >
                     {{v.saleSlogan}}
                   </span>
                 </div>
@@ -43,31 +43,7 @@
 
 <script>
 export default {
-<<<<<<< HEAD
-  // data: () => {
-  //   return {
-  //     img: []
-  //   }
-  // },
-  props: ['res'],
-  mounted() {
-    // console.log(this.res);
-  }
-  // mounted() {
-  //   axios({
-  //     url: '/api/homedata',
-  //   })
-  //     .then((result) => {
-  //       const resultData = result.data.data.template.componentList;
-  //       this.img = resultData[1].adPictures[0].pictureUrl;
-  //       // console.log(this.groupFloor);
-  //       // console.log(this.groupFloor[1].adPictures[0].pictureUrl);
-  //
-  //     })
-  // }
-=======
   props: ['res']
->>>>>>> 468ecea89d899c3aebe1e832214be486f1e5f251
 }
 </script>
 

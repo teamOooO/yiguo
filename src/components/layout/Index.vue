@@ -1,7 +1,7 @@
 <template>
     <div class="index">
         <router-view class="indexcon"/>
-        <footer-comp></footer-comp>
+        <footer-comp v-show="$store.state.footerShow"></footer-comp>
     </div>
 </template>
 

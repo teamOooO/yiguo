@@ -8,6 +8,8 @@ import Classify from '@/components/layout/Classify'
 import Community from '@/components/layout/Community'
 import ShoppingCar from '@/components/layout/ShoppingCar'
 import Mine from '@/components/layout/Mine'
+import Detail from '@/components/layout/detail'
+
 import Area from '@/components/home/Area'
 import Product from '@/components/list/Product'
 
@@ -20,20 +22,6 @@ Vue.use(Router)
 export default new Router({
   routes: [{
       path: '/',
-<<<<<<< HEAD
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/classify',
-      redirect:'/classify/0'
-    },
-    {
-      path: '/classify/:page',
-      name: 'classify',
-      component: Classify,
-      props:true
-=======
       component: Index,
       redirect: '/home',
       children: [{
@@ -42,7 +30,11 @@ export default new Router({
           component: Home
         },
         {
-          path: 'classify/:navindex?',
+          path: '/classify',
+          redirect:'/classify/0'
+        },
+        {
+          path: 'classify/:page',
           name: 'classify',
           component: Classify,
           props: true
@@ -58,7 +50,6 @@ export default new Router({
           component: Mine
         },
       ]
->>>>>>> dcaa87275d3e4a85bee8096164dbe66e51031d3f
     },
     {
       path: '/community',
@@ -69,6 +60,12 @@ export default new Router({
       path: '/product/:class',
       name: 'product',
       component: Product
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: Detail,
+      props:true
     },
     {
       path: 'area',

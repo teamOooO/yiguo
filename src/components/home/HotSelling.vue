@@ -19,7 +19,7 @@
              <p class="name"><a href="javascript:;">{{v.componentCommoditys[0].commodityName}}</a></p>
              <p class="sub">{{v.componentCommoditys[0].subTitle}}</p>
              <div class="saletip">
-               <span>{{v.componentCommoditys[0].saleSlogan}}</span>
+               <span  v-if="v.componentCommoditys[0].saleSlogan">{{v.componentCommoditys[0].saleSlogan}}</span>
              </div>
              <div class="price">
                <strong>¥{{v.componentCommoditys[0].commodityPrice}}</strong>

@@ -30,7 +30,6 @@
         z-index: 100;
         @include border(0, 0, 1px, 0);
         border-color: #ffd6a0;
-        margin-bottom: .08rem;
     }
 </style>
 

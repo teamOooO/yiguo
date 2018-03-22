@@ -1,7 +1,7 @@
 <template>
     <div class="first-screen">
         <header-comp></header-comp>
-        <banner-comp :imgs="res"></banner-comp>
+        <banner-comp v-if="res.length>0" :imgs="res[0]"></banner-comp>
         <subnav :subnav="res"></subnav>
     </div>
 </template>
