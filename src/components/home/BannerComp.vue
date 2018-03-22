@@ -8,7 +8,7 @@
       </mt-swipe>
     </div>
     <div class="bottom-img">
-      <img :src="pic">
+      <img :src="imgs.adPictures[0].pictureUrl">
     </div>
   </div>
 </template>
@@ -23,14 +23,6 @@
     components: {
       [Swipe.name]: Swipe,
       [SwipeItem.name]: SwipeItem
-    },
-    data() {
-      return {
-        pic: ''
-      }
-    },
-    updated() {
-      this.pic = this.imgs.adPictures[0].pictureUrl
     }
   }
 </script>

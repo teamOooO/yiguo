@@ -1,12 +1,12 @@
 <template>
   <div class="shoppingcar">
-    <shipping-tip v-show="!isEmpty"></shipping-tip>
+     <empty v-show="$store.state.isEmpty"></empty>
+    <shipping-tip v-show="!$store.state.isEmpty"></shipping-tip>
     <div class="cart-wrap">
-      <empty v-show="isEmpty"></empty>
-      <div v-show="!isEmpty" class="goods">
-        <commoditys v-for="v in $store.state.Commoditys" :key="v.CommodityId" :detail="v"></commoditys>
-        <promotion-groups v-for="v in $store.state.PromotionGroups" :key="v.CommodityId" :detail="v"></promotion-groups>
-        <failure-groups v-for="v in $store.state.FailureGroups" :key="v.CommodityId" :detail="v"></failure-groups>
+      <div v-show="!$store.state.isEmpty" class="goods">
+        <promotion-groups></promotion-groups>
+        <commoditys></commoditys>
+        <failure-groups></failure-groups>
       </div>
     </div>
     <total-info></total-info>
@@ -29,18 +29,6 @@
       Empty,
       PromotionGroups
     },
-    data() {
-      return {
-        isEmpty: true,
-        
-      }
-    },
-    mounted() {
-      if (this.$store.getters.commodityTotalCount > 0)
-        this.isEmpty = false;
-    //  console.log(this.$store.getters.commodityTotalCount)
-     
-    }
   }
 </script>
 

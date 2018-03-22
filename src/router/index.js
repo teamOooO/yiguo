@@ -8,6 +8,8 @@ import Classify from '@/components/layout/Classify'
 import Community from '@/components/layout/Community'
 import ShoppingCar from '@/components/layout/ShoppingCar'
 import Mine from '@/components/layout/Mine'
+import Detail from '@/components/layout/detail'
+
 import Area from '@/components/home/Area'
 import Product from '@/components/list/Product'
 
@@ -62,6 +64,12 @@ export default new Router({
       path: '/product/:class',
       name: 'product',
       component: Product
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      component: Detail,
+      props:true
     },
     {
       path: 'area',

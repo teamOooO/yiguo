@@ -23,7 +23,7 @@
                   {{v.commodityName}}
                 </a>
                 <div class="saletip">
-                  <span>
+                  <span v-if="v.saleSlogan" >
                     {{v.saleSlogan}}
                   </span>
                 </div>

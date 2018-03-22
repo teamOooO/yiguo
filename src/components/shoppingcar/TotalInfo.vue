@@ -1,6 +1,9 @@
 <template>
     <div class="cart-total">
-        <div class="check"><i class="active"></i>全选</div>
+        <div class="check-all" @click="selectAll">
+            <i v-if="$store.getters.Amount.allSelected" class="active"></i>
+            <i v-else></i> 全选
+        </div>
         <div class="text">
             <p>合计(不含运费)：<b>¥{{$store.getters.Amount.sumAmount}}</b></p>
             <span>已优惠: ¥{{$store.getters.Amount.cheapAmount}}</span>
@@ -13,9 +16,9 @@
 
 <script>
     export default {
-        data() {
-            return {
-               
+        methods: {
+            selectAll() {
+                this.$store.commit('selectAll', this.$store.getters.Amount.allSelected);
             }
         }
     }
@@ -30,7 +33,7 @@
         background: #fff;
         @include flexbox();
         border-bottom: 1px solid #999;
-        .check {
+        .check-all {
             top: 0;
             left: 0;
             width: .63rem;
