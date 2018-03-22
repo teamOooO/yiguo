@@ -1,38 +1,7 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import "./yo/usage/core/reset";
 
-li, ul {
-  list-style: none;
-}
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-  .list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    li {
-      display: flex;
-      align-items: center;
-      div:first-child {
-        width: 80px
-      }
-      div:nth-child(2) {
-        flex: 1
-      }
-    }
-  }
-}
+// @import "./utils/common.util.scss";
 
-button {
-  width: 80px;
-  height: 30px;
-}
+@import './views/home.scss'
 
-.active {
-  font-size: 40px;
-}

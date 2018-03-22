@@ -1,0 +1,5 @@
+{
+  "/api/homedata": "/homedata",
+  "/api/detail": "/detail",
+  "/api1/commodity/classify": "/classify"
+}

@@ -1,0 +1,634 @@
+{
+    "RspCode": 1,
+    "RspData": {
+        "data": [
+            {
+                "CategoryName": "进口水果",
+                "CategoryCode": "01_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "01_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170612/9288708943225548_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0101_qiyiguo",
+                        "CategoryName": "奇异果",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170612/9288708943127244_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0104_li",
+                        "CategoryName": "李",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709129282255_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0106_mei",
+                        "CategoryName": "莓",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709129020111_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0107_niuyouguo",
+                        "CategoryName": "牛油果",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170612/9288708943192780_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0108_tizi",
+                        "CategoryName": "提子",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170615/9288709129511631_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0109_pingguo",
+                        "CategoryName": "苹果",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709129478863_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0110_li",
+                        "CategoryName": "梨",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709129446095_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0111_ganjuchengyou",
+                        "CategoryName": "柑桔橙柚",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709129413327_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0113_xiangjiao",
+                        "CategoryName": "香蕉",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709128889039_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0114_huolongguo",
+                        "CategoryName": "火龙果",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709128856271_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0115_yezi",
+                        "CategoryName": "椰子",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709128823503_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0116_mangguo",
+                        "CategoryName": "芒果",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709128790735_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0117_fengli",
+                        "CategoryName": "凤梨",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709128692431_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0119_tropical",
+                        "CategoryName": "热带水果",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709128626895_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0120_season",
+                        "CategoryName": "时令水果",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709128594127_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0121_yuanxiang",
+                        "CategoryName": "原箱水果",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709128561359_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "国产水果",
+                "CategoryCode": "02_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "02_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709172896464_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0201_pingguo",
+                        "CategoryName": "苹果",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709128528591_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0202_li",
+                        "CategoryName": "梨",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709128495823_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0204_ganjuchengyou",
+                        "CategoryName": "柑桔橙柚",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709128463055_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0205_mihoutao",
+                        "CategoryName": "猕猴桃",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709128430287_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0206_gua",
+                        "CategoryName": "瓜",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709128397519_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0210_zao",
+                        "CategoryName": "枣",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170619/9288709269430995_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0211_mei",
+                        "CategoryName": "莓",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709128200911_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0212_mangguo",
+                        "CategoryName": "芒果",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709128069839_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0213_fengli",
+                        "CategoryName": "凤梨",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709128004303_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0215_bale",
+                        "CategoryName": "芭乐",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170615/9288709127938767_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0216_baixiangguo",
+                        "CategoryName": "百香果",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709127905999_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0217_tropical",
+                        "CategoryName": "热带水果",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709127873231_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0218_season",
+                        "CategoryName": "时令水果",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709127840463_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0219_yuanxiang",
+                        "CategoryName": "原箱水果",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709127807695_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "精选肉类",
+                "CategoryCode": "05_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "05_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709152481999_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0501_jinkouniurou",
+                        "CategoryName": "进口牛肉",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709152318159_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0502_guochanniurou",
+                        "CategoryName": "国产牛肉",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709152285391_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0503_zhurou",
+                        "CategoryName": "猪肉",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709152252623_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0504_yangrou",
+                        "CategoryName": "羊肉",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709152219855_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0505_xiangchang",
+                        "CategoryName": "香肠",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709152187087_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0506_huotui",
+                        "CategoryName": "火腿/培根",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709152154319_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0507_rouzhipin",
+                        "CategoryName": "肉制品",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170615/9288709152121551_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0508_jinkoulurou",
+                        "CategoryName": "进口鹿肉",
+                        "PictureUrl": "http://img12.yiguoimg.com/d/items/2017/171122/9288715492369270_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "禽类蛋品",
+                "CategoryCode": "06_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "06_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709173519056_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0601_ji",
+                        "CategoryName": "鸡",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709152449231_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0602_ya",
+                        "CategoryName": "鸭",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709152416463_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0603_egeteseqinlei",
+                        "CategoryName": "鹅/鸽/特色禽类",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709152383695_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0604_dan",
+                        "CategoryName": "蛋",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709152350927_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "海鲜水产",
+                "CategoryCode": "04_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "04_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170619/9288709276607187_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0401_yu",
+                        "CategoryName": "鱼",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709169193680_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0402_sanwenyu",
+                        "CategoryName": "三文鱼",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709169128144_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0403_xia",
+                        "CategoryName": "虾",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709169062608_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0404_xie",
+                        "CategoryName": "蟹",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709169029840_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0405_beilei",
+                        "CategoryName": "贝",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709168702160_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0406_huoxian",
+                        "CategoryName": "活鲜",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709168669392_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0407_haichanganhuo",
+                        "CategoryName": "海产干货",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709168538320_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0408_tesehaichan",
+                        "CategoryName": "特色海产",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709168472784_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "即烹美食",
+                "CategoryCode": "12_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "12_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170619/9288709291909843_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1202_dujiamizhi",
+                        "CategoryName": "独家秘制",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170616/9288709173158608_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1203_shengmenghaixian",
+                        "CategoryName": "生猛海鲜",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170616/9288709173125840_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1204_rihanliaoli",
+                        "CategoryName": "日韩料理",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170616/9288709173093072_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1205_meiweiliangtang",
+                        "CategoryName": "美味靓汤",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709173060304_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1206_jingdianzhucai",
+                        "CategoryName": "经典主菜",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709173027536_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1207_zhonghuameishi",
+                        "CategoryName": "中华美食",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709172994768_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1208_jingzhixican",
+                        "CategoryName": "精致西餐",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170616/9288709172962000_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1209_kaiweixiaocai",
+                        "CategoryName": "开胃小菜",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709172929232_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1210_dongnanyafengwei",
+                        "CategoryName": "东南亚风味",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709172863696_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1211_tianyuanshishu",
+                        "CategoryName": "田园时蔬",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709172830928_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "乳品糕点",
+                "CategoryCode": "08_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "08_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170619/9288709271954131_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0801_nailao",
+                        "CategoryName": "奶酪",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709169816272_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0802_huangyounaiyou",
+                        "CategoryName": "黄油/奶油",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709169783504_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0803_rusuanyinliao",
+                        "CategoryName": "酸奶/乳酸饮料",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170619/9288709300626131_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0804_niunai",
+                        "CategoryName": "牛奶",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709169685200_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0805_mianbao",
+                        "CategoryName": "面包",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170619/9288709300593363_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0806_dangao",
+                        "CategoryName": "蛋糕",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709169619664_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0807_tiandian",
+                        "CategoryName": "甜点",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709168636624_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "新鲜蔬菜",
+                "CategoryCode": "03_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "03_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709170143952_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0301_yecailei",
+                        "CategoryName": "叶菜类",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709170799312_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0302_genjinglei",
+                        "CategoryName": "根茎类",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709170766544_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0303_qieguoguaguolei",
+                        "CategoryName": "茄果/瓜果类",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709170733776_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0304_huacaidoulei",
+                        "CategoryName": "花菜/豆类",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709170701008_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0306_jungu",
+                        "CategoryName": "菌菇",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709170668240_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0307_shalacai",
+                        "CategoryName": "沙拉菜",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709170635472_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0308_lengdongshucai",
+                        "CategoryName": "冷冻蔬菜",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170616/9288709170569936_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0309_douzhipin",
+                        "CategoryName": "豆制品",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709170504400_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0310_congsuanlei",
+                        "CategoryName": "葱蒜类",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709170438864_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0311_shucaizuhe",
+                        "CategoryName": "蔬菜组合",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709170406096_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "方便速食",
+                "CategoryCode": "10_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "10_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170619/9288709271986899_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1008_ healthsoup",
+                        "CategoryName": "养生汤品",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709169881808_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1001_lengdongdianxin",
+                        "CategoryName": "冷冻点心",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709170111184_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1003_zhongshizhushi",
+                        "CategoryName": "中式主食",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709170045648_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1004_huoguoliao",
+                        "CategoryName": "火锅料",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170616/9288709170012880_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1005_lengcangshushi",
+                        "CategoryName": "冷藏熟食",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170616/9288709169980112_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1006_banchengpincai",
+                        "CategoryName": "半成品菜",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709169947344_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1007_yihejiayan",
+                        "CategoryName": "易盒家宴",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170616/9288709169914576_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "粮油杂货",
+                "CategoryCode": "07_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "07_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170615/9288709120729807_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0701_mi",
+                        "CategoryName": "米",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709120926415_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0702_zaliang",
+                        "CategoryName": "杂粮",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709120893647_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0703_mianmianzhipin",
+                        "CategoryName": "面/面制品",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709120860879_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0704_you",
+                        "CategoryName": "油",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709120762575_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0705_tiaoweiliao",
+                        "CategoryName": "调味料",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709120697039_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0706_ganhuo",
+                        "CategoryName": "干货",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709120664271_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0707_guoganlingshi",
+                        "CategoryName": "果干/零食",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170615/9288709120631503_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "饮料酒水",
+                "CategoryCode": "09_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "09_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img10.yiguoimg.com/e/items/2017/170615/9288709121811151_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0901_shui",
+                        "CategoryName": "水",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709121778383_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0902_guozhiyinliao",
+                        "CategoryName": "果汁/饮料",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709121745615_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0903_chongtiaoyinpin",
+                        "CategoryName": "冲调饮品",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709121712847_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "0904_jiujiuju",
+                        "CategoryName": "葡萄酒/酒具",
+                        "PictureUrl": "http://img11.yiguoimg.com/e/items/2017/170615/9288709121680079_220.jpg"
+                    }
+                ]
+            },
+            {
+                "CategoryName": "礼品礼券",
+                "CategoryCode": "11_channelhome",
+                "Childs": [
+                    {
+                        "CategoryCode": "11_channelhome",
+                        "CategoryName": "全部",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709151761103_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1101_lipinlihe",
+                        "CategoryName": "礼品礼盒",
+                        "PictureUrl": "http://img12.yiguoimg.com/e/items/2017/170615/9288709121516239_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1102_likaliquan",
+                        "CategoryName": "礼卡礼券",
+                        "PictureUrl": "http://img14.yiguoimg.com/e/items/2017/170615/9288709151892175_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1103_yuanshanlihe",
+                        "CategoryName": "原膳礼盒",
+                        "PictureUrl": "http://img09.yiguoimg.com/e/items/2017/170615/9288709151826639_220.jpg"
+                    },
+                    {
+                        "CategoryCode": "1106_zhinengyingjian",
+                        "CategoryName": "智能硬件",
+                        "PictureUrl": "http://img13.yiguoimg.com/e/items/2017/170616/9288709168440016_220.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+}
