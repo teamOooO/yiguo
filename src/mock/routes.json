@@ -1,5 +1,6 @@
 {
   "/api/homedata": "/homedata",
   "/api/commodity/classify": "/classify",
-  "/api/users/issignin":"/issignin"
+  "/api/users/issignin":"/issignin",
+  "/api/product/list": "/list"
 }

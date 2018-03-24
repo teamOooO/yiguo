@@ -59,7 +59,7 @@ export default new Router({
       component: Community
     },
     {
-      path: '/product/:class',
+      path: '/product/:index',
       name: 'product',
       component: Product
     },
