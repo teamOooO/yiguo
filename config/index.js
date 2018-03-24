@@ -11,22 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-<<<<<<< HEAD
-      '/api': { // 本地接口
-        target: 'http://localhost:9001'
-      }
-      // '/api': {  // 真实接口
-      //   target: 'http://10.9.163.33:3000'
-      // }
-
-=======
-      // '/api': {   target: 'http://localhost:9000' },
       '/api': {
-        target: 'http://10.9.163.33:3000'
+        // target: 'http://localhost:9000'
+        target:'http://10.9.163.33:3000'
       }
       // '/api1': {   target: 'http://weixin.m.yiguo.com',   changeOrigin: true,
       // pathRewrite: {     '^/api': ''   }
->>>>>>> zhangboyu-0315-router-end
     },
 
     // Various Dev Server settings

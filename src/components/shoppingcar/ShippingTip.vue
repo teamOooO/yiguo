@@ -18,8 +18,6 @@
 <style lang="scss">
     @import '../../styles/yo/usage/core/reset.scss';
     .total-info {
-        position: fixed;
-        left: 0;
         width: 100%;
         height: .34rem;
         padding: 0 0 0 .12rem;
