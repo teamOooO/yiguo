@@ -50,7 +50,24 @@ const vm = new Vue({
       // console.log(result)
       this.$store.dispatch('getIssignin',result.data.data.issignin)
       this.$store.dispatch('getUserName',result.data.data.username)
+
+       //关于购物车的请求
+      axios({
+        url:'/api/users/findCart',
+        method:'POST',
+        data:{
+          username:result.data.data.username
+        }
+      }).then((result) => {
+        result = result.data.data;
+        result.forEach((item) => {
+            this.$store.dispatch('addToCart',{opt:item,id:item.CommodityId,canadd:true});
+            this.$store.dispatch('cartIsEmpty')
+        })
+      })
+
     })
+   
   }
 })
 =======
