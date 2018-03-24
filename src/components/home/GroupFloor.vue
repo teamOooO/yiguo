@@ -7,8 +7,7 @@
       <div class="product-list clear">
         <div class="product-list-in">
 
-          <!-- <div class="proitem" v-for="(v, i) in res[i].componentCommoditys"> -->
-          <div class="proitem" v-for="(v, i) in v.componentCommoditys" >
+          <router-link :to="{ name: 'detail', params: {id: v.commodityId} }" tag="div" class="proitem" v-for="(v, i) in v.componentCommoditys">
             <div class="pic" :data-cid="v.commodityId">
               <div class="tag">
                 <img :src="v.cornerPictureUrl" alt="">
@@ -33,8 +32,7 @@
                 </div>
               </p>
             </div>
-          </div>
-
+          </router-link>
         </div>
       </div>
     </div>

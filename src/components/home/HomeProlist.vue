@@ -38,7 +38,10 @@
 
 <script>
 export default {
-  props: ['res']
+  props: ['res'],
+  mounted() {
+    console.log(this.res);
+  }
 }
 </script>
 

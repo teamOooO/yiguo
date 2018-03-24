@@ -11,8 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/api': {
+      '/home': {
         target: 'http://localhost:9000',
+      },
+      '/api': {
+        target: 'http://10.9.163.33:3000',
       }
       // '/api1': {
       //   target: 'http://weixin.m.yiguo.com',

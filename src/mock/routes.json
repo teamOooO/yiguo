@@ -1,5 +1,8 @@
 {
-  "/api/homedata": "/homedata",
+  "/home/homedata": "/homedata",
   "/api/detail": "/detail",
-  "/api1/commodity/classify": "/classify"
+  "/api1/commodity/classify": "/classify",
+  "/api/community": "/community",
+  "/api/knowledge": "/knowledge",
+  "/api/livinghome": "/livinghome"
 }
