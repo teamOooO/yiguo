@@ -12,8 +12,15 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
 <<<<<<< HEAD
+<<<<<<< HEAD
       '/api': {
+=======
+      '/home': {
+>>>>>>> sj-201803015-homepage
         target: 'http://localhost:9000',
+      },
+      '/api': {
+        target: 'http://10.9.163.33:3000',
       }
       // '/api1': {
       //   target: 'http://weixin.m.yiguo.com',

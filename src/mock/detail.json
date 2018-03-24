@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "Method": "",
   "RspCode": 1,
@@ -73,3 +74,80 @@
     }
   }
 }
+=======
+{
+  "Method": "",
+  "RspCode": 1,
+  "RspMsg": "",
+  "RspData": {
+    "cityCode": "2",
+    "data": {
+      "CommodityId": "aa8bd4c5-968c-428b-9005-6c17d51f7845",
+      "CommodityCode": "1326925",
+      "CommodityName": "广西高乐蜜甜芒果6个200g以上/个",
+      "OriginalPrice": 45.8000,
+      "CommodityPrice": 35.8000,
+      "ShowOriginalPrice": true,
+      "State": 1,
+      "DeliveryAreas": "上海,北京,江浙,天津,上海+,北京+,广州,广州+,杭州,杭州+,南京,黄渡自配 ,黄渡3PL ",
+      "PlaceOfOrigin": "广西百色",
+      "Pictures": ["http://img11.yiguoimg.com/d/items/2017/171115/9288715143422831_500.jpg", "http://img12.yiguoimg.com/d/items/2017/171115/9288715143390063_500.jpg", "http://img12.yiguoimg.com/d/items/2017/171115/9288715143357295_500.jpg"],
+      "Speces": [{
+        "CommodityId": "aa8bd4c5-968c-428b-9005-6c17d51f7845",
+        "CommodityCode": "1326925",
+        "CommodityName": "广西高乐蜜甜芒果6个200g以上/个",
+        "Spec": "6个/份"
+      }],
+      "MaxLimitCount": 20,
+      "CanNoReasonToReturn": 0,
+      "CanNoReasonToReturnText": "不支持7天无理由退货",
+      "DeliveryTips": "16:00 后完成订单，预计后天(3月19日)送达",
+      "SubTitle": "芒香醉人心",
+      "PromotionTag": "直降",
+      "CommodityPromotions": [{
+        "PromotionId": "252a5cb1-0ead-4f3b-885d-fa96ecb6f99c",
+        "PromotionTitle": "广西高乐蜜甜芒果6个",
+        "PromotionType": 1,
+        "PromotionTypeText": "优惠",
+        "PromotionLevels": [],
+        "IsJump": false,
+        "Sort": 1
+      }],
+      "IsTimeDeliveryText": "",
+      "ShippingAddress": "北京 昌平区 昌平区",
+      "CanAddToCart": 1
+    },
+    "voteRate": "99%",
+    "voteCount": "5364",
+    "TopOneYgmCommodityVote": {
+      "CommodityId": "aa8bd4c5-968c-428b-9005-6c17d51f7845",
+      "CommodityCode": null,
+      "CommodityName": null,
+      "UserId": "a45cbdda-ed4b-4c90-b021-d12b91bb4d4e",
+      "UserName": "13***",
+      "OrderId": "62ac4234-cff1-42a0-bd52-2384194f531a",
+      "VoteResult": 0,
+      "VoteDate": "2018-03-12 15:24:13",
+      "CommentContent": "对商品非常满意哦",
+      "ReplyComment": "",
+      "ProductEvaluate": 5,
+      "DeliveryEvaluate": 0,
+      "ServiceEvaluate": 5,
+      "CommentState": 2,
+      "CreateTime": "2018-03-16 11:53:19",
+      "ModifyTime": "2018-03-17 09:15:42",
+      "BuyTime": "2018-03-12 15:24:13",
+      "Recommend": 0,
+      "CommodityVoteId": "3e62b74c-9b35-43ca-9881-3b85f225089c",
+      "VotePictures": null,
+      "VotePicturesInfo": null,
+      "CommodityAmount": 0,
+      "CommodityPrice": 0.0,
+      "CommodityTotalPrice": 0.0,
+      "SmallPic": null,
+      "UserPic": null,
+      "UserLevelPic": "http://img02.yiguo.com/e/web/130101/app/userphotos/tongpai@3x.png"
+    }
+  }
+}
+>>>>>>> sj-201803015-homepage

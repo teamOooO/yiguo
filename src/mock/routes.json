@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "/api/homedata": "/homedata",
 <<<<<<< HEAD
@@ -8,3 +9,13 @@
   "/api1/commodity/classify": "/classify"
 >>>>>>> zhangboyu-0315-router-end
 }
+=======
+{
+  "/home/homedata": "/homedata",
+  "/api/detail": "/detail",
+  "/api1/commodity/classify": "/classify",
+  "/api/community": "/community",
+  "/api/knowledge": "/knowledge",
+  "/api/livinghome": "/livinghome"
+}
+>>>>>>> sj-201803015-homepage
