@@ -11,7 +11,7 @@
         </div>
         <div class="productInfor">
             <p class="title">{{productInfor.CommodityName}}</p>
-            <p class="subhead"><i class="label">{{productInfor.PromotionTag}}</i>{{productInfor.SubTitle}}</p>
+            <p class="subhead"><i v-if="productInfor.PromotionTag" class="label">{{productInfor.PromotionTag}}</i>{{productInfor.SubTitle}}</p>
             <div class="price">
                 <p class="priceIn">
                     <span class="priceRed"><i>¥</i>{{productInfor.CommodityPrice}}</span>
@@ -22,12 +22,12 @@
                 <i class="dian"></i>{{productInfor.CanNoReasonToReturnText}}
             </div>
         </div>
-        <div class="sale">
+        <div class="sale"  v-if="CommodityPromotions.PromotionTitle">
             <h3>促销</h3>
             <div class="saleIn">
                 <div class="saleList saleListTwo">
                     <i class="label">{{CommodityPromotions.PromotionTypeText}}</i>
-                    <p class="title">{{CommodityPromotions.PromotionTitle}}</p>
+                    <p v-if="CommodityPromotions.PromotionTitle" class="title">{{CommodityPromotions.PromotionTitle}}</p>
                     <i class="goBack"></i>
                     <div class="list clear">
                         <p class="txt">满100减20</p>
@@ -79,8 +79,8 @@
     </div>
     <div class="defooter">
         <router-link class="btn1"  href="/" :to="{name:'home'}"><i class="home"></i>首页</router-link>
-        <router-link class="btn1 btn3" href="/mycart" :to="{name:'shoppingcar'}"><i class="cart"></i>购物车 <i class="num">3</i></router-link>
-        <a href="javascript:;" class="btn2 btnRed" @click="addToCart">加入购物车</a>
+        <router-link class="btn1 btn3" href="/mycart" :to="{name:'shoppingcar'}"><i class="cart"></i>购物车 <i class="num">{{$store.getters.Amount.count}}</i></router-link>
+        <a href="javascript:;" class="btn2 btnRed" @click="addToCart(productInfor.CommodityId,productInfor.CanAddToCart)">加入购物车</a>
     </div>
     </div>
 </template>
@@ -107,7 +107,7 @@
             axios({
                 url: '/api/users/findList/'+this.id,
             }).then((result) => {
-                console.log(result)
+                // console.log(result)
                 if(result){
                     this.RspData =result.data.data.RspData;
                     result = result.data.data.RspData.data;
@@ -123,14 +123,31 @@
             goBack(){
                this.$router.go(-1);
             },
-            addToCart(){
+            addToCart(id,canadd){
+                //先写入vuex中
+                const opt = {
+                    CommodityAmount: this.count,
+                    CommodityId: id,
+                    CommodityName: this.productInfor.CommodityName,
+                    CommodityPrice: this.productInfor.CommodityPrice,
+                    OriginalPrice: this.productInfor.OriginalPrice,
+                    PromotionTag:  this.productInfor.PromotionTag,
+                    Selected: true,
+                    SmallPic: this.imgs[0],
+                };                
+                //再发送ajax请求
                 axios({
                     method: 'post',
                     url: '/api/users/updateCart',
                     data: {
-                        username: 'Fred',
-                        id: 'Flintstone'
+                        username: this.$store.state.userName,
+                        id,
+                        number:this.count
                     }
+                }).then((result) => {
+                    if(result.data.ret)
+                      this.$store.dispatch('addToCart',{opt,id,canadd});
+                      this.$store.dispatch('cartIsEmpty');
                 });
             }
         }

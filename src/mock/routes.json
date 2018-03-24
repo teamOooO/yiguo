@@ -1,15 +1,10 @@
 {
-  "/api/homedata": "/homedata",
-<<<<<<< HEAD
-  "/api/commodity/classify": "/classify",
-<<<<<<< HEAD
-  "/api/users/issignin":"/issignin"
-=======
-  "/api/detail": "/detail",
-  "/api1/commodity/classify": "/classify"
->>>>>>> zhangboyu-0315-router-end
-=======
+  "/home/homedata": "/homedata",
+  "/home/commodity/classify": "/classify",
   "/api/users/issignin":"/issignin",
-  "/api/product/list": "/list"
->>>>>>> yiguo-zhujieming
+  "/api/detail": "/detail",
+  "/api/product/list": "/list",
+  "/home/community": "/community",
+  "/home/knowledge": "/knowledge",
+  "/home/livinghome": "/livinghome"
 }

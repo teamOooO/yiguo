@@ -1,13 +1,13 @@
 <template>
-    <router-link class="line-item" tag="div" :to="{name:'detail',params:{id:detail.CommodityId}}">
+    <div class="line-item">
         <check :isselected="detail.Selected" :data-id="detail.CommodityId"></check>
         <div class="img"><img :src="detail.SmallPic"></div>
-        <div class="text">
+        <router-link class="text" :to="{name:'detail',params:{id:detail.CommodityId}}" tag="div">
             <h2 class="elli2">{{detail.CommodityName}}</h2>
             <div v-if="detail.PromotionTag" class="saletip"><span class="line-all">{{detail.PromotionTag}}</span></div>
             <p><strong class="price">￥<b>{{detail.CommodityPrice}}</b></strong>
                 <span v-if="detail.OriginalPrice!=detail.CommodityPrice" class="bl">￥{{detail.OriginalPrice}}</span></p>
-        </div>
+        </router-link>
         <div class="del" @click="deletCommodity(detail.CommodityId)"><i></i></div>
         <div class="limit red"></div>
         <!-- <div class="yo-number"></div> -->
@@ -17,11 +17,12 @@
             <span class="input">{{detail.CommodityAmount}}</span>
             <span class="add" @click="commodityAdd(detail.CommodityId)"><i>+</i></span>
         </div>
-    </router-link>
+    </div>
 </template>
 
 <script>
     import Check from './Check'
+    import axios from 'axios'
     export default {
         props: ['detail'],
         components: {
@@ -29,14 +30,46 @@
         },
         methods: {
             commodityAdd(id) {
-                this.$store.commit('commodityAdd', id);
+                axios({
+                    method: 'post',
+                    url: '/api/users/updateCart',
+                    data: {
+                        username: this.$store.state.userName,
+                        id,
+                        number:1
+                    }
+                }).then((result) => {
+                    if(result.data.ret){
+                      this.$store.dispatch('commodityAdd', id);
+                }});
             },
             commodityMinus(id) {
-                this.$store.commit('commodityMinus', id);
+                axios({
+                    method: 'post',
+                    url: '/api/users/updateCart',
+                    data: {
+                        username: this.$store.state.userName,
+                        id,
+                        number:-1
+                    }
+                }).then((result) => {
+                    if(result.data.ret){
+                      this.$store.dispatch('commodityMinus', id);
+                }});
             },
             deletCommodity(id) {
-                this.$store.commit('deletCommodity', id);
-                this.$store.commit('cartIsEmpty');
+                axios({
+                    method: 'post',
+                    url: '/api/users/removeCart',
+                    data: {
+                        username: this.$store.state.userName,
+                        id
+                    }
+                }).then((result) => {
+                    if(result.data.ret){
+                      this.$store.dispatch('deletCommodity', id);
+                      this.$store.dispatch('cartIsEmpty', id);
+                }});
             }
         }
     }

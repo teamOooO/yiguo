@@ -9,10 +9,10 @@
   
     <div class="pruductShow">
       <div v-for="v in list" :key="v.CommodityId" class="productContent">
-        <router-link :to="{name:'community',params:{id:v.CommodityId}}" class="img" tag="div">
+        <router-link :to="{name:'detail',params:{id:v.CommodityId}}" class="img" tag="div">
           <img :src="v.SmallPic">
         </router-link>
-        <router-link :to="{name:'community',params:{id:v.CommodityId}}" class="inforPro" tag="div">
+        <router-link :to="{name:'detail',params:{id:v.CommodityId}}" class="inforPro" tag="div">
             <p class="title">{{v.CommodityName}}</p>
             <p class="txt">{{v.SubTitle}}</p>
             <p class="price">
@@ -20,12 +20,12 @@
               <span class="standard">{{v.Spec}}</span>
             </p>
         </router-link>
-        <span class="addCart"></span>
+        <span class="addCart" @click="addToCart(v)"></span>
       </div>
     </div>
     
     <div class="option">
-        <a class="num" href="/mycart"><i>3</i></a>
+        <router-link class="num" :to="{name:'shoppingcar'}"><i>{{$store.getters.Amount.count}}</i></router-link>
         <a href="#" class="top" id="gotop" style="display: none;"></a>
     </div>
   </div>
@@ -41,11 +41,40 @@
     },
     created () {
       axios({
-        url: '/api/product/list'
+        url: '/home/product/list'
         })
         .then((result) => {
             this.list = result.data.RspData.data
       })
+    },
+    methods: {
+      addToCart(v){
+        console.log(v)
+        //先写入vuex中
+        const opt = {
+            CommodityAmount: 1,
+            CommodityId:v.CommodityId,
+            CommodityName: v.CommodityName,
+            CommodityPrice: v.CommodityPrice,
+            OriginalPrice: v.OriginalPrice,
+            PromotionTag:  v.PromotionTag,
+            Selected: true,
+            SmallPic: v.SmallPic,
+        };                
+        //再发送ajax请求
+        axios({
+            method: 'post',
+            url: '/api/users/updateCart',
+            data: {
+                username: this.$store.state.userName,
+                id:v.CommodityId,
+                number:1
+            }
+        }).then((result) => {
+            if(result.data.ret)
+              this.$store.dispatch('addToCart',{opt,id:v.CommodityId,canadd:v.CanAddToCart});
+        });
+      }
     }
     
   }

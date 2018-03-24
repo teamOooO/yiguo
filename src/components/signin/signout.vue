@@ -29,6 +29,10 @@
                 this.$store.commit('setUserName','')
                 wsCache.delete('token')
                 this.$router.push('/mine')
+                //清空状态管理里面的购物车
+                 this.$store.commit('clearCart');
+                 this.$store.commit('cartIsEmpty');
+
             }
         }
     }

@@ -43,7 +43,7 @@ import GoodContent from '@/components/classify/GoodContent'
         methods: {
             axios(page){
                 axios({
-                url: '/api/commodity/classify'
+                url: '/home/commodity/classify'
                 })
                 .then((result) => {
                     this.result = result.data.RspData.data[page].Childs
@@ -70,10 +70,6 @@ import GoodContent from '@/components/classify/GoodContent'
             height: 100%;
             text-align: center;
             background: #f4f4f4;
-<<<<<<< HEAD
-=======
-            padding-bottom: .5rem;
->>>>>>> zhangboyu-0315-router-end
             ul{
                 width: 100%;
                 height: 100%;

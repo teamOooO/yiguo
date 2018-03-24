@@ -60,7 +60,6 @@ export default {
           password: this.password
       })
       .then((result) => {
-        // console.log(result)
         const d = result.data.data
         if (d.success) {
           wsCache.set('token', d.token, {exp : 3600 * 24})
@@ -69,17 +68,29 @@ export default {
           this.$store.dispatch('getIssignin', true)
 
           this.$router.push('/mine')
-
+          //登录成功之后，请求当前用户的购物车数据
+          axios({
+            url:'/api/users/findCart',
+            method:'POST',
+            data:{
+              username:d.username
+            }
+          }).then((result) => {
+            result = result.data.data
+             result.forEach((item) => {
+                this.$store.dispatch('addToCart',{opt:item,id:item.CommodityId,canadd:true});
+                 this.$store.dispatch('cartIsEmpty')
+             })
+          })
         } else {
           this.username = ''
           this.password = ''
           this.yzm = ''
           alert('登录失败');
         }
-      })
+        })
     }
   }
-
 }
 </script>
 

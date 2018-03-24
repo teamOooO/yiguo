@@ -1,9 +1,9 @@
 <template>
   <div class="listContent">
-      <a href="" v-for ="v in result" :key="v.CategoryCode" :id="v.CategoryCode">
+      <router-link :to="{name:'product',params:{index:0}}" v-for ="v in result" :key="v.CategoryCode" :id="v.CategoryCode">
         <img :src="v.PictureUrl" alt="">
         {{v.CategoryName}}
-      </a> 
+      </router-link> 
   </div>
 </template>
 
