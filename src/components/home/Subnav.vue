@@ -1,7 +1,7 @@
 <template>
     <div class="subnav">
         <ul class="first-screen-menu">
-            <router-link to="/product" tag="li" v-for="v in subnav.componentNavs" :key="v.data_id" >
+            <router-link :to="{name:'product',params:{index:0}}" tag="li" v-for="v in subnav.componentNavs" :key="v.data_id" >
                 <a href="javascript:;"> <i><img :src="v.pictureUrl"></i>
                     <p>{{v.navName}}</p>
                 </a>
@@ -46,5 +46,3 @@
         }
     }
 </style>
-
-

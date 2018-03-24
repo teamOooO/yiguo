@@ -132,7 +132,7 @@
                     CommodityPrice: this.productInfor.CommodityPrice,
                     OriginalPrice: this.productInfor.OriginalPrice,
                     PromotionTag:  this.productInfor.PromotionTag,
-                    Selected: false,
+                    Selected: true,
                     SmallPic: this.imgs[0],
                 };                
                 //再发送ajax请求
@@ -147,6 +147,7 @@
                 }).then((result) => {
                     if(result.data.ret)
                       this.$store.dispatch('addToCart',{opt,id,canadd});
+                      this.$store.dispatch('cartIsEmpty');
                 });
             }
         }

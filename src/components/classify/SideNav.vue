@@ -43,7 +43,7 @@ import GoodContent from '@/components/classify/GoodContent'
         methods: {
             axios(page){
                 axios({
-                url: '/api/commodity/classify'
+                url: '/home/commodity/classify'
                 })
                 .then((result) => {
                     this.result = result.data.RspData.data[page].Childs

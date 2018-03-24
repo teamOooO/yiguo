@@ -21,6 +21,12 @@ import Signin from '@/components/signin/signin'
 import Signup from '@/components/signin/signup'
 import Signout from '@/components/signin/signout'
 
+import CommunityContent from '@/components/community/CommunityContent'
+import KnowLedge from '@/components/community/KnowLedge'
+import LivingHome from '@/components/community/LivingHome'
+import Lovetoeat from '@/components/community/Lovetoeat'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -57,8 +63,30 @@ export default new Router({
     },
     {
       path: '/community',
-      name: 'community',
-      component: Community
+      name: '',
+      component: Community,
+      children: [
+        {
+          path: '',
+          name: 'community',
+          component: CommunityContent
+        },
+        {
+          path: 'knowledge',
+          name: 'knowledge',
+          component: KnowLedge
+        },
+        {
+          path: 'livinghome',
+          name: 'livinghome',
+          component: LivingHome
+        },
+        {
+          path: 'lovetoeat',
+          name: 'lovetoeat',
+          component: Lovetoeat
+        }
+      ]
     },
     {
       path: '/product/:index',
