@@ -11,9 +11,8 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-<<<<<<< HEAD
-<<<<<<< HEAD
       '/api': {
+<<<<<<< HEAD
 =======
       '/home': {
 >>>>>>> sj-201803015-homepage
@@ -44,14 +43,15 @@ module.exports = {
       '/api': {
         // target: 'http://localhost:9000'
         target:'http://10.9.163.33:3000'
+=======
+        target:'http://10.9.163.33:4000'
+      },
+      '/home': {
+        target:'http://localhost:9000'
+>>>>>>> zhangboyu-0315-router-end
       }
       // '/api1': {   target: 'http://weixin.m.yiguo.com',   changeOrigin: true,
       // pathRewrite: {     '^/api': ''   }
-<<<<<<< HEAD
->>>>>>> zhangboyu-0315-router-end
->>>>>>> 09b1e152d4c251f49e835f0368ca8ec7d6e5f618
-=======
->>>>>>> zhangboyu-0315-router-end
     },
 
     // Various Dev Server settings

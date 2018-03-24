@@ -72,7 +72,6 @@ const store = new Vuex.Store({
           .FailureGroups
           .push(opt)
       }
-      console.log(state)
     },
     changeFooterShow(state, payload) {
       state.footerShow = payload

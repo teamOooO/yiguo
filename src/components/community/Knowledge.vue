@@ -34,7 +34,11 @@ export default {
   },
   mounted(){
     axios({
+<<<<<<< HEAD
       url: '/api/knowledge'
+=======
+      url: '/home/knowledge'
+>>>>>>> zhangboyu-0315-router-end
     })
       .then((result) => {
         // console.log(result);

@@ -46,7 +46,7 @@ export default {
       } else {
         /* ------------   axios 请求 (未完成) -------------- */
         axios({
-          url: "api1/classify",
+          url: "home/classify",
           data: {
             keyWord: this.content
           }
