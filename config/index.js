@@ -12,10 +12,50 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
+<<<<<<< HEAD
         target:'http://10.9.163.33:4000'
       },
       '/home': {
         target:'http://localhost:9001'
+=======
+<<<<<<< HEAD
+=======
+      '/home': {
+>>>>>>> sj-201803015-homepage
+        target: 'http://localhost:9000',
+      },
+      '/api': {
+        target: 'http://10.9.163.33:3000',
+      }
+      // '/api1': {
+      //   target: 'http://weixin.m.yiguo.com',
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
+=======
+<<<<<<< HEAD
+      '/api': { // 本地接口
+        target: 'http://localhost:9001'
+      }
+      // '/api': {  // 真实接口
+      //   target: 'http://10.9.163.33:3000'
+      // }
+
+=======
+      // '/api': {   target: 'http://localhost:9000' },
+=======
+>>>>>>> zhangboyu-0315-router-end
+      '/api': {
+        // target: 'http://localhost:9000'
+        target:'http://10.9.163.33:3000'
+=======
+        target:'http://10.9.163.33:4000'
+      },
+      '/home': {
+        target:'http://localhost:9000'
+>>>>>>> zhangboyu-0315-router-end
+>>>>>>> 350ba3790f3ca45a0eae3eb9d2ce4dda2c260e69
       }
       // '/api1': {   target: 'http://weixin.m.yiguo.com',   changeOrigin: true,
       // pathRewrite: {     '^/api': ''   }

@@ -34,7 +34,15 @@ export default {
   },
   mounted(){
     axios({
+<<<<<<< HEAD
       url: '/home/livinghome'
+=======
+<<<<<<< HEAD
+      url: '/api/livinghome'
+=======
+      url: '/home/livinghome'
+>>>>>>> zhangboyu-0315-router-end
+>>>>>>> 350ba3790f3ca45a0eae3eb9d2ce4dda2c260e69
     })
       .then((result) => {
         // console.log(result);

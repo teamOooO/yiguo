@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 350ba3790f3ca45a0eae3eb9d2ce4dda2c260e69
 {
   "/home/homedata": "/homedata",
   "/home/commodity/classify": "/classify",
@@ -8,3 +12,13 @@
   "/home/knowledge": "/knowledge",
   "/home/livinghome": "/livinghome"
 }
+=======
+{
+  "/home/homedata": "/homedata",
+  "/api/detail": "/detail",
+  "/api1/commodity/classify": "/classify",
+  "/api/community": "/community",
+  "/api/knowledge": "/knowledge",
+  "/api/livinghome": "/livinghome"
+}
+>>>>>>> sj-201803015-homepage

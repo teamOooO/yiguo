@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+<template>
+  <div>列表页</div>
+</template>
+=======
 <template>
   <div class="productList">
     <div class="navList line-bottom">
@@ -227,3 +232,4 @@
     background-size: 100% 100%;
   }
 </style>
+>>>>>>> aa6f58341cd8394f53b06f4635ffb58d8d9380ee
