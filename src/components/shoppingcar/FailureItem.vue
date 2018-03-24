@@ -6,19 +6,25 @@
             <h2 class="elli2">{{detail.CommodityName}}</h2>
             <p><strong class="price">￥<b>{{detail.CommodityPrice}}</b></strong></p>
         </div>
-        <div class="del"><i></i></div>
+        <div class="del" @click="deletCommodity(detail.CommodityId)"><i></i></div>
     </div>
 </template>
 
 <script>
-export default {
-   props: ['detail'],
-}
+    export default {
+        props: ['detail'],
+        methods: {
+            deletCommodity(id) {
+                this.$store.commit('deletCommodity', id);
+                this.$store.commit('cartIsEmpty');
+            }
+        }
+    }
 </script>
 
 
 <style lang="scss">
-    @import '../../styles/yo/usage/core/reset.scss'; 
+    @import '../../styles/yo/usage/core/reset.scss';
     .fail-line-item {
         height: .9rem;
         padding: .1rem .08rem;
@@ -58,7 +64,7 @@ export default {
             @include flex(1);
             @include flexbox();
             @include flex-direction(column);
-            color: rgba(0,0,0,0.6);
+            color: rgba(0, 0, 0, 0.6);
             .elli2 {
                 @include flex(1);
                 line-height: .15rem;
@@ -81,7 +87,6 @@ export default {
                 }
             }
             .price {
-                
                 font-size: 14px;
             }
         }
@@ -99,6 +104,5 @@ export default {
                 background-size: 100%;
             }
         }
-        
     }
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <div class="line-item">
-        <div class="check"><i class="active"></i></div>
+    <router-link class="line-item" tag="div" :to="{name:'detail',params:{id:detail.CommodityId}}">
+        <check :isselected="detail.Selected" :data-id="detail.CommodityId"></check>
         <div class="img"><img :src="detail.SmallPic"></div>
         <div class="text">
             <h2 class="elli2">{{detail.CommodityName}}</h2>
@@ -8,20 +8,37 @@
             <p><strong class="price">￥<b>{{detail.CommodityPrice}}</b></strong>
                 <span v-if="detail.OriginalPrice!=detail.CommodityPrice" class="bl">￥{{detail.OriginalPrice}}</span></p>
         </div>
-        <div class="del"><i></i></div>
+        <div class="del" @click="deletCommodity(detail.CommodityId)"><i></i></div>
         <div class="limit red"></div>
         <!-- <div class="yo-number"></div> -->
         <div class="num">
-            <span class="cut active"><i>-</i></span>
+            <span v-if="detail.CommodityAmount <= 1" class="cut active"><i>-</i></span>
+            <span v-else class="cut" @click="commodityMinus(detail.CommodityId)"><i>-</i></span>
             <span class="input">{{detail.CommodityAmount}}</span>
-            <span class="add"><i>+</i></span>
+            <span class="add" @click="commodityAdd(detail.CommodityId)"><i>+</i></span>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
+    import Check from './Check'
     export default {
         props: ['detail'],
+        components: {
+            Check
+        },
+        methods: {
+            commodityAdd(id) {
+                this.$store.commit('commodityAdd', id);
+            },
+            commodityMinus(id) {
+                this.$store.commit('commodityMinus', id);
+            },
+            deletCommodity(id) {
+                this.$store.commit('deletCommodity', id);
+                this.$store.commit('cartIsEmpty');
+            }
+        }
     }
 </script>
 
@@ -38,25 +55,25 @@
         position: relative; // .yo-number {
         //     @include yo-number('', .7rem, .21rem, 3px);
         // }
-        .check {
-            width: .35rem;
-            height: .05rem;
-            padding: .11rem 0 .1rem .1rem;
-            font-size: 12px;
-            margin-top: .13rem;
-            i {
-                display: inline-block;
-                width: .16rem;
-                height: .16rem;
-                margin: .02rem .06rem 0 0;
-                background: url("../../assets/images/check1.png") no-repeat;
-                background-size: 100%;
-                vertical-align: -4px;
-            }
-            i.active {
-                background-image: url("../../assets/images/check2.png")
-            }
-        }
+        // .check {
+        //     width: .35rem;
+        //     height: .05rem;
+        //     padding: .11rem 0 .1rem .1rem;
+        //     font-size: 12px;
+        //     margin-top: .13rem;
+        //     i {
+        //         display: inline-block;
+        //         width: .16rem;
+        //         height: .16rem;
+        //         margin: .02rem .06rem 0 0;
+        //         background: url("../../assets/images/check1.png") no-repeat;
+        //         background-size: 100%;
+        //         vertical-align: -4px;
+        //     }
+        //     i.active {
+        //         background-image: url("../../assets/images/check2.png")
+        //     }
+        // }
         .img {
             height: 100%;
             width: .7rem;
@@ -131,6 +148,9 @@
                 border: 1px solid #ddd;
                 border-radius: 3px 0 0 3px;
                 font-size: 18px;
+            }
+            span.active {
+                color: #bbb;
             }
             .input {
                 @include flex(1);

@@ -21,7 +21,7 @@
                   <a href="javascript:;">{{v.commodityName}}</a>
                 </p>
                 <div class="saletip">
-                  <span>{{v.saleSlogan}}</span>
+                  <span  v-if="v.saleSlogan">{{v.saleSlogan}}</span>
                 </div>
                 <div class="price">
                   <strong>￥{{v.commodityPrice}}</strong>

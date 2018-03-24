@@ -2,7 +2,16 @@
   <div>
     <!-- <div class="" v-for='(v, i) in groupFloor'> -->
     <first-screen :res="firstScreen"></first-screen>
+<<<<<<< HEAD
+=======
+    <group-floor :res='groupFloor' />
+    <!-- </div> -->
+>>>>>>> 09b1e152d4c251f49e835f0368ca8ec7d6e5f618
     <group-floor :res="groupFloor"/>
+=======
+    <first-screen :res="firstScreen"></first-screen>
+    <group-floor :res='groupFloor' />
+>>>>>>> zhangboyu-0315-router-end
     <hot-selling :hotSellingTit="hotSellingTit" :hotSelling="hotSelling"/>
     <home-prolist :res="homeProlist" />
   </div>
@@ -16,10 +25,19 @@
   export default {
     data: () => {
       return {
+<<<<<<< HEAD
         firstScreen: [],
+=======
+<<<<<<< HEAD
+=======
+        firstScreen: [],
+>>>>>>> zhangboyu-0315-router-end
+        groupFloor: [],
+>>>>>>> 09b1e152d4c251f49e835f0368ca8ec7d6e5f618
         hotSellingTit: [],//热卖商品标题
         hotSelling: [],//热卖商品
-        homeProlist: []
+        homeProlist: [],
+        firstScreen: []
       }
     },
     components: {
@@ -40,15 +58,21 @@
           this.hotSellingTit.push(resultData[5]);
           this.hotSelling.push(resultData[6], resultData[7], resultData[8], resultData[9], resultData[10], resultData[11], resultData[12]);
           this.homeProlist.push(resultData[13], resultData[14], resultData[15], resultData[16], resultData[17], resultData[18]);
-          console.log(resultData[1]);
+          // console.log(resultData[1]);
           // this.img = resultData[1].adPictures[0].pictureUrl;
           // console.log(this.groupFloor);
           // console.log(this.groupFloor[1].adPictures[0].pictureUrl);
 
+<<<<<<< HEAD
+=======
+=======
+          this.firstScreen.push(resultData[0]);
+          this.hotSellingTit.push(resultData[5]);
+          this.hotSelling.push(resultData[6], resultData[7], resultData[8], resultData[9], resultData[10], resultData[11], resultData[12]);
+          this.homeProlist.push(resultData[13], resultData[14], resultData[15], resultData[16], resultData[17], resultData[18]);
+>>>>>>> zhangboyu-0315-router-end
+>>>>>>> 09b1e152d4c251f49e835f0368ca8ec7d6e5f618
         })
     }
   }
 </script>
-<style lang="scss">
-
-</style>

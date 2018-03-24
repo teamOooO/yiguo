@@ -50,7 +50,7 @@ export default {
             keyWord: this.content
           }
         }).then(result => {
-          console.log(result);
+          // console.log(result);
         });
       }
     }

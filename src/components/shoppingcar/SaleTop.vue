@@ -1,6 +1,13 @@
 <template>
-    <div class="sale-top line-bottom elli">
-        <a href="javascript:;">去凑单<i></i></a><span class="tag">满减</span>您还差<span class="red">80</span>元，即享20元优惠</div>
+    <div v-if="$store.getters.Amount.proSum>0" class="sale-top line-bottom elli">
+        <a href="javascript:;">去凑单<i></i></a>
+        <span class="tag">满减</span>您还差
+        <span class="red">{{$store.getters.Amount.proSum}}</span> 元，即享20元优惠
+    </div>
+    <div v-else class="sale-top line-bottom elli">
+        <a href="javascript:;"><i></i></a>
+        <span class="tag" style="">满减</span>已满足 [满100元减20元活动，节省20元]
+    </div>
 </template>
 
 <script>
@@ -10,6 +17,7 @@
 <style lang="scss">
     @import '../../styles/yo/usage/core/reset.scss';
     .sale-top {
+        margin-top: .08rem;
         position: relative;
         height: .4rem;
         padding: 0 .93rem 0 .09rem;
@@ -38,7 +46,7 @@
         .tag {
             display: inline-block;
             height: .17rem;
-            margin: 0 .28rem 0 0;
+            margin: 0 .12rem 0 0;
             padding: 0 .02rem;
             border-radius: 2px;
             background: #11b57c;

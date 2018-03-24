@@ -1,13 +1,12 @@
 <template>
     <div class="group">
-        <line-item :detail="detail"></line-item>
+        <line-item v-for="v in $store.state.Commoditys" :key="v.CommodityId" :detail="v"></line-item>
     </div>
 </template>
 
 <script>
     import LineItem from './LineItem.vue'
     export default {
-        props: ['detail'],
         components: {
             LineItem
         }
@@ -17,6 +16,6 @@
 
 <style lang="scss">
     .group {
-        margin-bottom: .08rem;
+        margin-top: .08rem;
     }
 </style>
