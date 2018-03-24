@@ -1,7 +1,7 @@
 var homeAllData = require('./homedata.json')
 var classify = require('./classify.json')
-<<<<<<< HEAD
 var issignin = require('./issignin.json')
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 var detail = require('./detail.json')
@@ -10,10 +10,15 @@ var detail = require('./detail.json')
 =======
 var list = require('./list.json')
 >>>>>>> yiguo-zhujieming
+=======
+var detail = require('./detail.json')
+
+>>>>>>> zhangboyu-0315-router-end
 module.exports = function() {
   return {
     "homedata": homeAllData,
     "classify": classify,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "issignin": issignin
@@ -24,5 +29,9 @@ module.exports = function() {
     "issignin": issignin,
     "list": list
 >>>>>>> yiguo-zhujieming
+=======
+    "issignin": issignin,
+    "detail": detail
+>>>>>>> zhangboyu-0315-router-end
   }
 }

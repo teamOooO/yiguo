@@ -1,7 +1,7 @@
 {
   "/api/homedata": "/homedata",
-<<<<<<< HEAD
   "/api/commodity/classify": "/classify",
+<<<<<<< HEAD
 <<<<<<< HEAD
   "/api/users/issignin":"/issignin"
 =======
@@ -12,4 +12,8 @@
   "/api/users/issignin":"/issignin",
   "/api/product/list": "/list"
 >>>>>>> yiguo-zhujieming
+=======
+  "/api/users/issignin":"/issignin",
+  "/api/detail": "/detail"
+>>>>>>> zhangboyu-0315-router-end
 }
